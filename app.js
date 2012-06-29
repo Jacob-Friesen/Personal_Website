@@ -1,3 +1,4 @@
+var PORT = 80
 
 /**
  * Module dependencies.
@@ -8,7 +9,6 @@ var express = require('express');
 var app = module.exports = express.createServer();
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -21,6 +21,7 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
+
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
@@ -32,6 +33,6 @@ app.configure('production', function(){
 // Routes
 require('./routes')(app);
 
-app.listen(80, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+app.listen(PORT, function(){
+  console.log("JacobFriesen.com listening on port %d in %s mode", app.address().port, app.settings.env);
 });
