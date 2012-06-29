@@ -1,0 +1,102 @@
+body {
+  padding-top: 10px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+}
+div.page_state {
+  width: 895px;
+  height: 20px;
+}
+div.main_box,
+div.menu_container {
+  width: 900px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0 0 15px 15px;
+  z-index: 1;
+  opacity: 1;
+}
+div.menu_container {
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+}
+div.menu_bar {
+  -moz-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+/*height: 26px*/
+  border: 0 solid #000;
+  border-bottom-width: 2px;
+  height: 185px;
+}
+div.menu_bar div.menu_box,
+div.menu_bar div.menu_box_left {
+  float: left;
+  padding: 10px;
+}
+div.menu_bar div.menu_box div.menu_icon,
+div.menu_bar div.menu_box_left div.menu_icon {
+  border: solid 2px #000;
+  border-radius: 30px;
+  height: 130px;
+  width: 140px;
+}
+div.menu_bar div.menu_box_left {
+  margin-left: 40px;
+}
+div.title_bar {
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  margin-top: 5px;
+  margin-bottom: -7px;
+}
+div.text_wrapper {
+  width: 90%;
+  text-align: center;
+}
+div.main_picture {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: inset 0px 0px 5px #000;
+  box-shadow: inset 0px 0px 5px #000;
+  border: 2px solid #000;
+  width: 90%;
+  height: 350px;
+}
+img.main_image {
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+}
+#home {
+  background-color: lightBlue;
+}
+#skills {
+  background-color: #e5ab47;
+}
+#experience {
+  background-color: #c4b891;
+}
+#demos {
+  background-color: #98d398;
+}
+#blog {
+  background-color: #a05b5b;
+}
+span.main {
+  font-weight: bold;
+}
+div.main_picture,
+div.text_wrapper,
+div.main_box,
+div.menu_container,
+div.page_state {
+  margin-left: auto;
+  margin-right: auto;
+}

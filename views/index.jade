@@ -1,0 +1,18 @@
+//How to load the correct page on entry
+.to_load(id = "#{constant.to_load}")
+
+// main box
+.menu_container(id = "menu_box")
+    .menu_bar(id = "blue")
+        - var left = "_left", pages = constant.pages
+        - for (var i = 0; i < pages.length; i++)
+            - if(i > 0) left = ""
+            div(class = "menu_box#{left}", id = "#{pages[i].toLowerCase()}_link")
+                .menu_icon(id = "#{pages[i].toLowerCase()}")
+                center
+                    span.main= pages[i]
+
+//remove hardcoding later
+.page_state(id = "home")
+
+.main_box(id = "main_box")
