@@ -16,5 +16,5 @@ function render_main_page(req, res){
   if (req.url == "/") req.url = "/" + constant.pages[0].toLowerCase();
   constant.to_load = req.url.substring(1);//remove /
   
-  res.render('index', { title: constant.page_text[constant.to_load]["title"], prev_loaded: false});
+  res.render('index', { title: constant.page_text[constant.to_load].title, prev_loaded: false});
 }
