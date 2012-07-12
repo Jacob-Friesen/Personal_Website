@@ -15,13 +15,17 @@ module.exports = {
                            Currently I'm in a work term. I specialize in scripting languages and web development."
         },
         
-        demos: {
-            title: "Demos - Jacob Friesen"
-        },
-        
         skills: {
             title: "Skills - Jacob Friesen"
-        } 
+        },
+        
+        experience: {
+            title: "Experience - Jacob Friesen"
+        },
+        
+        demos: {
+            title: "Demos - Jacob Friesen"
+        }
     }
 }
 var constant = module.exports;// make it easy to access client side

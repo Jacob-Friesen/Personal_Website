@@ -86,6 +86,41 @@
 	<td>xpath=id('demos_title')</td>
 	<td>You has reached demos!!</td>
 </tr>
+<tr>
+	<td>mouseOver</td>
+	<td>xpath=id('experience')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=id('experience_title')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('experience_title')</td>
+	<td>Experience - Jacob Friesen</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/experience</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('experience_title')</td>
+	<td>Experience - Jacob Friesen</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/#experience</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('experience_title')</td>
+	<td>Experience - Jacob Friesen</td>
+</tr>
 </tbody></table>
 </body>
 </html>

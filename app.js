@@ -19,6 +19,18 @@ app.configure(function(){
   app.use(require('stylus').middleware({ src: __dirname + '/public' }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
+  
+  // Testing only
+  //app.use(express.static(__dirname + '/views/test'));
+  
+  // make a custom html template
+  app.register('.html', {
+    compile: function(str, options){
+      return function(locals){
+        return str;
+      };
+    }
+  });
 });
 
 
