@@ -1,4 +1,4 @@
-var PORT = 80
+var PORT = process.env.PORT
 
 /**
  * Module dependencies.
@@ -21,8 +21,6 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
   
   // Testing only
-  //app.use(express.static(__dirname + '/views/test'));
-  
   // make a custom html template
   app.register('.html', {
     compile: function(str, options){

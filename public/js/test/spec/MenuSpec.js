@@ -19,8 +19,10 @@ describe("Menu", function() {
                 $(document.body).append($('<div id='+pages[p]+menu.LINK_NAME+'/>'));
                 
             menu.init(pages, 'some text');
-            for (p in pages)
+            for (p in pages){
                 expect( $('#'+pages[p]+menu.LINK_NAME).data('events') ).toBeTruthy();
+                $('#'+pages[p]+menu.LINK_NAME).remove();
+            }
         });
     });
     
@@ -52,6 +54,8 @@ describe("Menu", function() {
         
         afterEach(function(){
             menu.page_text = null;
+            window.history.pushState('test_page', 'test_page', '/test');
+            window.document.title = "Jasmine Spec Runner";
         });
         
         it("should update the pages address to append a /page", function(){
@@ -61,7 +65,7 @@ describe("Menu", function() {
         });
         
         it("should update the pages address to append a #page if window.history.pushState is not present", function(){
-            var before = window.history.pushState;
+            var before =  window.history.pushState;
             window.history.pushState = null;// null simulates not present
             
             menu.new_page('home');

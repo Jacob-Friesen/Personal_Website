@@ -18,7 +18,6 @@ var system = {
     init_with: function(cur_page){
         this.NEW_PAGE = $('#main_box');//cached for later
         this.COLR_BAR = $('.page_state');//cached for later
-        this[cur_page].init();
         
         menu.init(constant.pages, constant.page_text);
         menu.open_link(cur_page);
