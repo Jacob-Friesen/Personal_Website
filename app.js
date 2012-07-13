@@ -1,4 +1,4 @@
-var PORT = process.env.PORT
+var PORT = 80
 
 /**
  * Module dependencies.
