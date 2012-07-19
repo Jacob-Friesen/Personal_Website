@@ -1,16 +1,61 @@
 .title_bar
-        h1(id = "experience_title")= constant.page_text.experience.title
-    .textWrapper(id=  "hTextWrapper", name = "hTextWrapper", class = "textWrapper")           
-        <!-- Iders -->
-        .job(id="job1")
-            .topWrapper(id = "changeOrange", class = "topWrapper", onclick = "exp_ns.job_events('job1')")
-                h3.title August 2011 - December 2011
-                button.collapseText(id="job1Clps")-
-                h3.title_r Iders
-            .jobText(id = "job1jobText")
-                p.jobName Web Developer
-                ul.jobDesc
-                    li Added a new Inventory Location Management system to the current Imformation Management System. This new system includes 5 different sections which all had different hardware and software environments.
-                    li Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces.
-                    li The rest of the backend code was coded mainly in python with some Javascript (Titanium Studio Libraries) and ZPL.
-                    li Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement state between sessions. (See the demo description)
+    h1(id = "experience_title")= constant.page_text.experience.title
+.experience.section
+    hr#experience.clear.experience
+    
+    <!-- Iders -->
+    .experience.job(id="job1")
+        .experience.job_summary(id = "changeOrange")
+            .experience.job_summary_info
+                #experience.experience.vertical_bullet
+                h3.experience.title Web Developer
+                .clear
+    
+                #experience.experience.vertical_bullet
+                h3.experience.title Iders
+                .clear
+    
+                #experience.experience.vertical_bullet
+                h3.experience.title August 2011 - December 2011
+                .clear
+            button.collapser -
+        .clear
+        ul.experience.job_main_points
+            li#experience_color
+                span Added a new Inventory Location Management system to the current Imformation Management System. This new system includes 5 different sections which all had different hardware and software environments.
+            li#experience_color 
+                span Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces.
+            li#experience_color
+                span The rest of the backend code was coded mainly in python with some Javascript (Titanium Studio Libraries) and ZPL.
+            li#experience_color
+                span Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement state between sessions. (See the demo description)
+
+    .job_seperator
+    hr#experience.clear.experience
+    .job_seperator
+
+    .experience.job(id="job1")
+        .experience.job_summary(id = "changeOrange")
+            .experience.job_summary_info
+                #experience.experience.vertical_bullet
+                h3.experience.title Web Developer
+                .clear
+    
+                #experience.experience.vertical_bullet
+                h3.experience.title Iders
+                .clear
+    
+                #experience.experience.vertical_bullet
+                h3.experience.title August 2011 - December 2011
+                .clear
+            button.collapser -
+        .clear
+        ul.experience.job_main_points
+            li#experience_color
+                span Added a new Inventory Location Management system to the current Imformation Management System. This new system includes 5 different sections which all had different hardware and software environments.
+            li#experience_color 
+                span Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces.
+            li#experience_color
+                span The rest of the backend code was coded mainly in python with some Javascript (Titanium Studio Libraries) and ZPL.
+            li#experience_color
+                span Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement state between sessions. (See the demo description)
