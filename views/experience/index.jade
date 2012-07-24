@@ -3,59 +3,35 @@
 .experience.section
     hr#experience.clear.experience
     
-    <!-- Iders -->
-    .experience.job(id="job1")
-        .experience.job_summary(id = "changeOrange")
-            .experience.job_summary_info
-                #experience.experience.vertical_bullet
-                h3.experience.title Web Developer
-                .clear
-    
-                #experience.experience.vertical_bullet
-                h3.experience.title Iders
-                .clear
-    
-                #experience.experience.vertical_bullet
-                h3.experience.title August 2011 - December 2011
-                .clear
-            button.collapser -
-        .clear
-        ul.experience.job_main_points
-            li#experience_color
-                span Added a new Inventory Location Management system to the current Imformation Management System. This new system includes 5 different sections which all had different hardware and software environments.
-            li#experience_color 
-                span Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces.
-            li#experience_color
-                span The rest of the backend code was coded mainly in python with some Javascript (Titanium Studio Libraries) and ZPL.
-            li#experience_color
-                span Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement state between sessions. (See the demo description)
-
-    .job_seperator
-    hr#experience.clear.experience
-    .job_seperator
-
-    .experience.job(id="job1")
-        .experience.job_summary(id = "changeOrange")
-            .experience.job_summary_info
-                #experience.experience.vertical_bullet
-                h3.experience.title Web Developer
-                .clear
-    
-                #experience.experience.vertical_bullet
-                h3.experience.title Iders
-                .clear
-    
-                #experience.experience.vertical_bullet
-                h3.experience.title August 2011 - December 2011
-                .clear
-            button.collapser -
-        .clear
-        ul.experience.job_main_points
-            li#experience_color
-                span Added a new Inventory Location Management system to the current Imformation Management System. This new system includes 5 different sections which all had different hardware and software environments.
-            li#experience_color 
-                span Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces.
-            li#experience_color
-                span The rest of the backend code was coded mainly in python with some Javascript (Titanium Studio Libraries) and ZPL.
-            li#experience_color
-                span Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement state between sessions. (See the demo description)
+    // Job block starts
+    - var jobs = constant.page_text.experience.jobs
+    - for (var i = 0; i < jobs.length; i++)
+        .experience.job
+            .experience.job_summary
+                .experience.job_summary_info
+                    #experience.experience.vertical_bullet
+                    h3.experience.title= jobs[i].position
+                    .clear
+        
+                    #experience.experience.vertical_bullet
+                    h3.experience.title= jobs[i].company
+                    .clear
+        
+                    #experience.experience.vertical_bullet
+                    h3.experience.title= jobs[i].date
+                    .clear
+                - if(jobs[i].details)
+                    button.collapser(id='exp_collapse_job#{i}') -
+            .clear
+            
+            // Details of Job block start
+            - if (jobs[i].details)
+                ul.experience.job_main_points(id="collapse_points_job#{i}")
+                    - var details = jobs[i].details
+                    - for (var j = 0; j < details.length; j++)
+                        li#experience_color(id="detail#{i}-#{j}")
+                            span= details[j]
+        - if (i < jobs.length - 1)
+            .job_seperator
+            hr#experience.clear.experience
+            .job_seperator

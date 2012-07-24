@@ -89,6 +89,32 @@ img.main_image {
 #blog {
   background-color: #a05b5b;
 }
+#home_color {
+  color: lightBlue;
+}
+#skills_color {
+  color: #e5ab47;
+}
+#experience_color {
+  color: #c4b891;
+}
+#demos_color {
+  color: #98d398;
+}
+#blog_color {
+  color: #a05b5b;
+}
+hr {
+  background-color: #000;
+  height: 3px;
+}
+hr.clear,
+.clear,
+hr.clear.experience {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
 span.main {
   font-weight: bold;
 }

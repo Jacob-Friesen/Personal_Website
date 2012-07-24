@@ -50,15 +50,13 @@ var system = {
     // Just clears up image of myself
     home: {
         init: function(){
-            $("#main_image").each( function (i, element) {
+            $("#main_image").each( function () {
                 $(this).attr("src", $(this).attr("src").replace('_s',''));
             });
         }
     },
     
-    experience: {
-        init: function(){}
-    },
+    experience: experience,
     
     demos: {
         init: function(){}

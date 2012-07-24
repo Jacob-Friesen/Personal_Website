@@ -10,6 +10,7 @@
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="link_tests">link_tests</a></td></tr>
 <tr><td><a href="lightbox_tests">lightbox_tests</a></td></tr>
+<tr><td><a href="hide_tests">hide_tests</a></td></tr>
 </tbody></table>
 </body>
 </html>
