@@ -59,6 +59,34 @@ div.text_wrapper {
   width: 90%;
   text-align: center;
 }
+div.vertical_bullet {
+  margin: 3.5px 0 12.5px 0;
+  float: left;
+  height: 30px;
+  width: 10px;
+  background-color: #000;
+}
+h3.vertical_title {
+  padding: 0;
+  margin: 0 0 15px 0;
+  float: left;
+  margin-left: 10px;
+  background-color: #fff;
+}
+button.collapser {
+  float: right;
+  border: 1px solid #000;
+  height: 130px;
+  width: 140px;
+  border: 0px solid #000;
+  background-color: #fff;
+  font-size: 100px;
+}
+button.small {
+  height: 50px;
+  width: 40px;
+  font-size: 50px;
+}
 div.main_picture {
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -95,6 +123,9 @@ img.main_image {
 #skills_color {
   color: #e5ab47;
 }
+#skills_border_color {
+  border-color: #e5ab47;
+}
 #experience_color {
   color: #c4b891;
 }
@@ -122,7 +153,14 @@ div.main_picture,
 div.text_wrapper,
 div.main_box,
 div.menu_container,
-div.page_state {
+div.page_state,
+div.skills.section {
   margin-left: auto;
   margin-right: auto;
+}
+p.no_margin {
+  margin: 0;
+}
+p.no_padding {
+  margin: 0;
 }

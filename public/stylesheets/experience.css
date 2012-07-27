@@ -7,21 +7,6 @@ div.experience.job {
 }
 div.experience.job_summary {
   padding: 0;
-  background-color: #a52a2a;
-}
-div.experience.vertical_bullet {
-  margin: 3.5px 0 12.5px 0;
-  float: left;
-  height: 30px;
-  width: 10px;
-  background-color: #000;
-}
-h3.experience.title {
-  padding: 0;
-  margin: 0 0 15px 0;
-  float: left;
-  margin-left: 10px;
-  background-color: #fff;
 }
 div.experience.job_summary_info {
   padding: 20px 20px 0 20px;
@@ -39,16 +24,8 @@ ul.experience.job_main_points li {
 ul.experience.job_main_points li span {
   color: #000;
 }
-button.collapser {
-  float: right;
+button.experience.collapser {
   margin: 30px 30px 0 0;
-  border: 1px solid #000;
-  height: 130px;
-  width: 140px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  background-color: #fff;
-  font-size: 100px;
 }
 div.experience.section {
   margin-left: auto;

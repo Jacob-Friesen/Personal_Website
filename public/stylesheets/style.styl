@@ -56,6 +56,35 @@ div.text_wrapper
   width: 90%
   text-align: center
   
+div.vertical_bullet
+  margin: 3.5px 0 12.5px 0
+  float: left
+  height: 30px
+  width: 10px
+  background-color: black
+  
+h3.vertical_title
+  padding: 0
+  margin: 0 0 15px 0
+  float: left
+  margin-left: 10px
+  background-color: white
+  
+button.collapser
+  float: right
+  border: 1px solid black
+  height: 130px
+  width: 140px
+  border: 0px solid black
+  //border-radius: 10px
+  background-color: white
+  font-size: 100px
+  
+button.small
+  height: 50px
+  width: 40px
+  font-size: 50px
+  
 // Home specific
 
 div.main_picture
@@ -85,10 +114,14 @@ img.main_image
 #blog
   background-color: #A05B5B;
 
+skills_color = #E5AB47
+
 #home_color
   color: lightBlue
 #skills_color
-  color: #E5AB47
+  color: skills_color
+#skills_border_color
+  border-color: skills_color
 #experience_color
   color: #C4B891
 #demos_color
@@ -108,6 +141,13 @@ hr.clear, .clear, hr.clear.experience
 span.main
   font-weight: bold
   
-div.main_picture, div.text_wrapper, div.main_box, div.menu_container, div.page_state
+div.main_picture, div.text_wrapper, div.main_box, div.menu_container, div.page_state,
+div.skills.section
   margin-left: auto
   margin-right: auto
+  
+p.no_margin
+  margin: 0
+
+p.no_padding
+  margin: 0

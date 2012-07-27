@@ -2,26 +2,29 @@
     h1(id = "experience_title")= constant.page_text.experience.title
 .experience.section
     hr#experience.clear.experience
-    
     // Job block starts
     - var jobs = constant.page_text.experience.jobs
     - for (var i = 0; i < jobs.length; i++)
         .experience.job
             .experience.job_summary
                 .experience.job_summary_info
-                    #experience.experience.vertical_bullet
-                    h3.experience.title= jobs[i].position
+                    #experience.vertical_bullet
+                    h3.vertical_title= jobs[i].position
                     .clear
         
-                    #experience.experience.vertical_bullet
-                    h3.experience.title= jobs[i].company
+                    #experience.vertical_bullet
+                    h3.vertical_title= jobs[i].company
                     .clear
         
-                    #experience.experience.vertical_bullet
-                    h3.experience.title= jobs[i].date
+                    #experience.vertical_bullet
+                    h3.vertical_title= jobs[i].date
                     .clear
                 - if(jobs[i].details)
-                    button.collapser(id='exp_collapse_job#{i}') -
+                    - var value = '+';
+                    - if(i == 0)
+                        - value = '-';
+                    button.experience.collapser(id='exp_collapse_job#{i}')= value
+
             .clear
             
             // Details of Job block start
