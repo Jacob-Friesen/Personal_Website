@@ -23,13 +23,13 @@
                     - var value = '+';
                     - if(i == 0)
                         - value = '-';
-                    button.experience.collapser(id='exp_collapse_job#{i}')= value
+                    button.experience.collapser(id='exp_collapse_job_#{i}', name="#{i}")= value
 
             .clear
             
             // Details of Job block start
             - if (jobs[i].details)
-                ul.experience.job_main_points(id="collapse_points_job#{i}")
+                ul.experience.job_main_points(id="collapse_points_job_#{i}", name="#{i}")
                     - var details = jobs[i].details
                     - for (var j = 0; j < details.length; j++)
                         li#experience_color(id="detail#{i}-#{j}")

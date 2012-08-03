@@ -121,6 +121,41 @@
 	<td>xpath=id('experience_title')</td>
 	<td>Experience - Jacob Friesen</td>
 </tr>
+<tr>
+	<td>mouseOver</td>
+	<td>xpath=id('skills')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=id('skills_title')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('skills_title')</td>
+	<td>Skills - Jacob Friesen</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/skills</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('skills_title')</td>
+	<td>Skills - Jacob Friesen</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/#skills</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=id('skills_title')</td>
+	<td>Skills - Jacob Friesen</td>
+</tr>
 </tbody></table>
 </body>
 </html>

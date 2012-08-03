@@ -57,6 +57,7 @@ var system = {
     },
     
     experience: experience,
+    skills: skills,
     
     demos: {
         init: function(){}

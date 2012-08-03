@@ -18,17 +18,17 @@
 </tr>
 <tr>
 	<td>mouseMove</td>
-	<td>id=exp_collapse_job0</td>
+	<td>id=exp_collapse_job_0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job0</td>
+	<td>id=exp_collapse_job_0</td>
 	<td>+</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
-	<td>id=exp_collapse_job0</td>
+	<td>id=exp_collapse_job_0</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,22 +38,22 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job0</td>
+	<td>id=exp_collapse_job_0</td>
 	<td>-</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
-	<td>id=exp_collapse_job1</td>
+	<td>id=exp_collapse_job_1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job1</td>
+	<td>id=exp_collapse_job_1</td>
 	<td>-</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
-	<td>id=exp_collapse_job1</td>
+	<td>id=exp_collapse_job_1</td>
 	<td></td>
 </tr>
 <tr>
@@ -63,10 +63,94 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job1</td>
+	<td>id=exp_collapse_job_1</td>
 	<td>+</td>
 </tr>
-
+<tr>
+	<td>open</td>
+	<td>http://localhost/skills</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=skills_collapse_skill_0</td>
+	<td>+</td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=skills_point_collapse_skill_0_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=skills_collapse_skill_0</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=skills_collapse_skill_1</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=skills_point_collapse_skill_1_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=skills_collapse_skill_1</td>
+	<td>+</td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_point_collapse_skill_1_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#collapse_point_points_skill_1_1 li:first-child</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_collapse_skill_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=skills_point_collapse_skill_3_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#collapse_point_points_skill_3_1 li:first-child</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

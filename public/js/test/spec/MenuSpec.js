@@ -19,7 +19,7 @@ describe("Menu", function() {
                 $(document.body).append($('<div id='+pages[p]+menu.LINK_NAME+'/>'));
                 
             menu.init(pages, 'some text');
-            for (p in pages){
+            for (p = 0; p < pages.length; p++){
                 expect( $('#'+pages[p]+menu.LINK_NAME).data('events') ).toBeTruthy();
                 $('#'+pages[p]+menu.LINK_NAME).remove();
             }
