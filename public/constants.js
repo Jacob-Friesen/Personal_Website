@@ -269,7 +269,63 @@ module.exports = {
         },
         
         demos: {
-            title: "Demos - Jacob Friesen"
+            title: "Demos - Jacob Friesen",
+            introduction: "These are samples of school and work term programs I built. Due to the legal or practical nature of some of these demos, \
+                           not all components of them are downloadable. Click on an image to see a larger version.",
+            demos: [
+                {
+                    name: "Iders Information Management Website",
+                    description: "In the Fall coop term of 2011 I worked on this website at Iders with some other Web Developers. I mainly worked on a \
+                                  distributed system, which is detailed in the experience section for Iders. Since I wanted to have a short demo the below \
+                                  video is of an additional feature I implemented which is automatically opening the windows you had open from last \
+                                  session in the current session. Keep in mind this is a web interface.",
+                    image: ["images/IdersIMS2_s.png", "Iders IMS2 Screen Picture"],
+                    link: ["videoIMS.html", "Jacob Friesen demonstrating IMS2 auto window session loading"]
+                },
+                {
+                    name: "Nutrifacts Project",
+                    description: "In the Summer school term of 2011 I worked on this project along with 3 other group members. The application uses a \
+                                  database of food items with associated nutritional facts in conjuction with a Java based framework of objects to track \
+                                  user preferences. These preferences are in the form of ratings which influence along with the filters the suggested \
+                                  items for each item selected.",
+                    image: ["images/nutrifactsMainScreen_s.jpg", "Nutrifacts main screen picture"],
+                    link: ["http://www.jacobfriesen.com/downloads/nutrifacts.zip", "Jacob Friesen Nutrifacts Project Download"]
+                },
+                {
+                    name: "RWRP Website",
+                    description: "This is the website I helped design while at my first work term. As the experience section states I worked on all parts \
+                                  of the website; design, front end, and back end. Since the website is proprietary (and not online yet) I have included \
+                                  a video demoing one of the features I worked on as a link below.",
+                    image: ["images/RWRPMain_s.jpg", "RWRP website picture"],
+                    link: ["video.html", "Jacob Friesen demonstrating the RWRP website"]
+                },
+                {
+                    name: "Movie Organizer Project",
+                    description: "This is a GUI application that manages a database of movies for a user. The user can create, add or edit any movie. Movies \
+                                  have data about their title, director(s), actors, description etc. This project was designed with another student for my \
+                                  Human Computer Interaction course. The focus was on user interaction not developing an entire application so the database \
+                                  is just an XML file and there may be some small display glitches.",
+                    image: ["images/movOrgPic_s.jpg", "Jacob Friesen Movie Organizer Picture"],
+                    link: ["http://www.jacobfriesen.com/downloads/MovieOrganizerSource.zip", "Jacob Friesen Movie Organizer Download"]
+                },
+                {
+                    name: "Doctor Scheduling Project",
+                    description: "This program schedules patients into a hospital. They are scheduled based on thier condition severity and when the available \
+                                  resources to treat them are ready. There are 2 types of resources: doctors and the rooms the patient is operated in. If two \
+                                  patients have the same condition the first one that requests treatment is treated first. This project was done for my Object \
+                                  Orientation (Comp 2150) course.",
+                    image: ["images/schedulePatientScreen_s.jpg", "Jacob Friesen Doctor Scheduling Picture"],
+                    link: ["http://www.jacobfriesen.com/downloads/schedulePatients.zip", "Jacob Friesen Patient Scheduler Download"]
+                },
+                {
+                    name: "Contact List Project",
+                    description: "This is a gui application that manages various contacts a person could have. The contact info includes variables like phone \
+                                  numbers which is read from a XML file. Using this application you can add, delete or edit any entry clicked on in the list \
+                                  display. This was done as part of an assignment I had in my current Human Computer Interaction course.",
+                    image: ["images/contactListScreen_s.jpg", "Jacob Friesen Contact List Picture"],
+                    link: ["http://www.jacobfriesen.com/downloads/contactList.zip", "Jacob Friesen Contact List Download"]
+                }
+            ]
         }
     }
 }

@@ -14,7 +14,7 @@ skills = {
                  $(collapser).hide();
                 trigger.innerHTML = "+";
             }
-        }).close("all").open(0);
+        }).close("all");
         
         var skill_sections = constant.page_text.skills.skill_types;
         for (var i = 0; i < skill_sections.length; i++){
@@ -31,7 +31,7 @@ skills = {
                      $(collapser).hide();
                     trigger.innerHTML = "+";
                 }
-            }).close("all").open(0);
+            }).close("all");
         }
     }
 };

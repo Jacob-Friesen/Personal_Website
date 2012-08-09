@@ -64,7 +64,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>xpath=id('demos_title')</td>
-	<td>You has reached demos!!</td>
+	<td>Demos - Jacob Friesen</td>
 </tr>
 <tr>
 	<td>open</td>
@@ -74,7 +74,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>xpath=id('demos_title')</td>
-	<td>You has reached demos!!</td>
+	<td>Demos - Jacob Friesen</td>
 </tr>
 <tr>
 	<td>open</td>
@@ -84,7 +84,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>xpath=id('demos_title')</td>
-	<td>You has reached demos!!</td>
+	<td>Demos - Jacob Friesen</td>
 </tr>
 <tr>
 	<td>mouseOver</td>

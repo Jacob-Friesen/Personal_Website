@@ -79,7 +79,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>id=skills_collapse_skill_0</td>
-	<td>+</td>
+	<td>-</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
@@ -94,7 +94,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>id=skills_collapse_skill_0</td>
-	<td>-</td>
+	<td>+</td>
 </tr>
 <tr>
 	<td>mouseMove</td>
@@ -149,6 +149,31 @@
 <tr>
 	<td>assertElementPresent</td>
 	<td>css=#collapse_point_points_skill_3_1 li:first-child</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/demos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=collapse_button_demos_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#collapse_details_demos_2 p:first-child</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseMove</td>
+	<td>id=collapse_button_demos_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#collapse_details_demos_3 p:first-child</td>
 	<td></td>
 </tr>
 </tbody></table>
