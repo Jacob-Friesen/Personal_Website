@@ -1,9 +1,10 @@
 // Only get system wide scripts on page load
 - if (!prev_loaded)
-    !!!
+    !!! strict
     html
         head
             title= title
+            meta(name="viewport", content="target-densitydpi=400, initial-scale=0.1, user-scalable=no")
             link(rel='stylesheet', href='/stylesheets/style.css')
             // Seperate out later...
             link(rel='stylesheet', href='/stylesheets/demos.css')

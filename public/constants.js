@@ -314,7 +314,7 @@ module.exports = {
                                   resources to treat them are ready. There are 2 types of resources: doctors and the rooms the patient is operated in. If two \
                                   patients have the same condition the first one that requests treatment is treated first. This project was done for my Object \
                                   Orientation (Comp 2150) course.",
-                    image: ["images/schedulePatientScreen_s.jpg", "Jacob Friesen Doctor Scheduling Picture"],
+                    image: ["images/schedulingHsptl_s.jpg", "Jacob Friesen Doctor Scheduling Picture"],
                     link: ["http://www.jacobfriesen.com/downloads/schedulePatients.zip", "Jacob Friesen Patient Scheduler Download"]
                 },
                 {
@@ -322,7 +322,7 @@ module.exports = {
                     description: "This is a gui application that manages various contacts a person could have. The contact info includes variables like phone \
                                   numbers which is read from a XML file. Using this application you can add, delete or edit any entry clicked on in the list \
                                   display. This was done as part of an assignment I had in my current Human Computer Interaction course.",
-                    image: ["images/contactListScreen_s.jpg", "Jacob Friesen Contact List Picture"],
+                    image: ["images/contactList_s.jpg", "Jacob Friesen Contact List Picture"],
                     link: ["http://www.jacobfriesen.com/downloads/contactList.zip", "Jacob Friesen Contact List Download"]
                 }
             ]

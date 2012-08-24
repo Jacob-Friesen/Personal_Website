@@ -13,30 +13,49 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost</td>
+	<td>http://localhost/demos</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=id('main_image')</td>
+	<td>id=demo_img_0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>xpath=id('main_picture_clone')</td>
+	<td>id=demo_img_0_clone</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=id('main_picture_clone')</td>
+	<td>id=demo_img_0_clone</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementNotPresent</td>
-	<td>xpath=id('main_picture_clone')</td>
+	<td>id=demo_img_0_clone</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>click</td>
+	<td>id=demo_img_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=demo_img_2_clone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.lb_overlay.js_lb_overlay</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=demo_img_2_clone</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
