@@ -9,6 +9,13 @@ if (typeof Object.new !== 'function') {
 
 utility = {
     
+    init: function(){
+        this.change_text.init();
+        
+        return this;
+    },
+    
+    // (psuedo-function)
     // Cycles through each element retrieved by collapse_with attaching the specified action to an event. When this event is
     // triggered the id of the current object is found and put in behind the collapse_to selector. If delay is sent the function
     // is only initialized for later use.
@@ -101,4 +108,75 @@ utility = {
         
         return Object.new(attacher.init(params["delay"]));
     },
-};
+    
+    // handles updating of layouts
+    update_layout: {
+        
+        changes: {
+            '#menu_center': {
+                0.75: ['width', '95.75%'],
+                1: ['width', '95.75%'],
+                1.25: ['width', '100%']
+            }
+        },
+        
+        // Updates the selector (if it can be found) with the appropriate values
+        // for the current multiple.
+        update: function(multiple){
+            for (selector in this.changes){
+                var element = $(selector);
+                if (element[0])
+                    element.css(this.changes[selector][multiple][0], this.changes[selector][multiple][1]);
+            }
+        }
+    },
+    
+    // Uses the css set font sizes as a baseline to scale all fonts
+    change_text: {
+        current_scale: 1,
+        
+        // Each of these gets a original_font_size set. Also very inefficient.
+        TO_CHANGE: [
+            [document.body, -1],//selector, default font size
+            ['h1', -1],
+            ['h4', -1]
+        ],
+        
+        to: {
+            small: function(){ utility.change_text.change_size_by(0.75); },
+            normal: function(){ utility.change_text.change_size_by(1); },
+            large: function(){ utility.change_text.change_size_by(1.25); }
+        },
+        
+        // Gets all the above elements current font-size and stores that as the default.
+        init: function(){
+            for(var i = 0; i < this.TO_CHANGE.length; i++){
+                var element = $(this.TO_CHANGE[i][0]).first();
+                
+                if (element[0])
+                    this.TO_CHANGE[i][1] = Number(element.css('font-size').replace('px',''));
+            }
+        },
+        
+        // Multiplies all elements original font size by multiple. The updates the page layout.
+        change_size_by: function(multiple){
+            //record size so it can be used outside of this object
+            this.current_scale = multiple;
+            
+            for(var i = 0; i < this.TO_CHANGE.length; i++){
+                var element = $(this.TO_CHANGE[i][0]);
+                var def_size = this.TO_CHANGE[i][1];
+                
+                // Loop through all items if selector retrieves a list
+                if (element[0] && element.length > 1){
+                    for(var j = 0; j < element.length; j++)
+                        $(element[j]).css('font-size', def_size * multiple);
+                }
+                else if (element[0])
+                    element.css('font-size', def_size * multiple);
+            }
+            
+            utility.update_layout.update(multiple);
+        }
+    }
+}.init();

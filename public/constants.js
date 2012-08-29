@@ -3,7 +3,7 @@ module.exports = {
     pages: [
         "Home",
         "Skills",
-        "Experience",
+        "Exp.",
         "Demos",
         "Blog"
     ],

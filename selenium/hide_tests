@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost/experience</td>
+	<td>http://localhost:3000/experience</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>http://localhost/skills</td>
+	<td>http://localhost:3000/skills</td>
 	<td></td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>http://localhost/demos</td>
+	<td>http://localhost:3000/demos</td>
 	<td></td>
 </tr>
 <tr>

@@ -19,15 +19,40 @@ var system = {
         this.NEW_PAGE = $('#main_box');//cached for later
         this.COLR_BAR = $('.page_state');//cached for later
         
+        this.pre_page_load();
         menu.init(constant.pages, constant.page_text);
         menu.open_link(cur_page);
     },
     
-    page_init: function(page){
+    // Sets up bottom bar, so adds event handlers for the buttons. Also sets the text to normal.
+    pre_page_load: function(){
+        $('#small_text_change').mousemove(function(){ system.update_text('small', this); });
+        $('#normal_text_change').mousemove(function(){ system.update_text('normal', this); });
+        $('#large_text_change').mousemove(function(){ system.update_text('large', this); });
+        
+        system.update_text('normal', $('#normal_text_change')[0]);
+    },
+    
+    // Adjust the size of the text based on size. Then updates the element to show that it is
+    // disabled, and all the other ones are now not disabled.
+    update_text: function(size, button){
+        utility.change_text.to[size]();
+        
+        // Update all other buttons to the default class except the one selected
+        $('button[id$="text_change"]').each(function(){
+            this.className = "text_change";
+        })
+        button.className = "text_change_selected";
+    },
+    
+    page_init: function(page){    
         // update the main color bar that provides page context
         this.COLR_BAR.attr('id', page);
         
         this[page].init();
+        
+        // make sure text is in the right size on page load
+        utility.change_text.change_size_by(utility.change_text.current_scale);
     },
     
     load_page: function(page, data, callback){

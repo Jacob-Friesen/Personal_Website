@@ -1,14 +1,14 @@
 body
   padding-top: 10px
-  font: 30px Helvetica, "Lucida Grande", Arial, sans-serif
+  font: 45px Helvetica, "Lucida Grande", Arial, sans-serif
   background-color: darkGrey
 h1
   padding: 0
   margin: 0
   font: 14px Helvetica, "Lucida Grande", Arial, sans-serif
-  font-size: 45px
+  font-size: 60px
 h4
-  font-size: 30px
+  font-size: 45px
   
 // Windows
 div.page_state
@@ -20,40 +20,36 @@ div.main_box, div.menu_container
   background-color: white
   border: 2px solid black
   border-radius: 0 0 15px 15px
-  z-index: 1
-  opacity: 1.0
   
 div.menu_container
-  border-bottom: 0
   border-radius: 15px 15px 0 0
   
-div.menu_bar
-  -moz-border-radius: 15px 15px 0 0
-  border-radius: 15px 15px 0 0
-  /*height: 26px*/
-  border: 0 solid black
-  border-bottom-width: 2px
-  height: 185px
-  
-  div.menu_box, div.menu_box_left
-    float: left
-    padding: 10px
+  div.menu_bar
+    border-radius: 15px 15px 0 0
+    border: 0 solid black
+    border-bottom-width: 2px
+    height: 185px
     
-    div.menu_icon
-      border: solid 2px black
-      border-radius: 30px
-      height: 130px
-      width: 140px
+  div.menu_center
+    width: 95.75%
     
-  div.menu_box_left
-    margin-left: 40px
-  
+    div.menu_box, div.menu_box_left
+      display: inline-block
+      padding: 10px
+      
+      div.menu_icon
+        border: solid 2px black
+        border-radius: 30px
+        height: 130px
+        width: 140px
+      
+    div.menu_box_left
+      margin-left: 10px
+    
 div.title_bar
   text-align: center
   width: 100%
-  height: 70px
   margin-top: 5px
-  margin-bottom: -7px
   
 div.text_wrapper
   width: 90%
@@ -119,27 +115,31 @@ div.page_options
   div.to_top
     float: left
     font-weight: bold
-    padding: 22px 10px 25px 10px
+    padding: 22px 9px 25px 9px
     border-right: 4px solid black
-    
-
     
   div.page_options_inner
     float: left
-    padding: 7px 5px 7px 10px
+    padding: 7px 4px 7px 10px
     
     span.text_change
       font-weight: bold
       margin-top: 15px
       float: left
     
-    button.text_change
+    button.text_change, button.text_change_selected
       float: left
       margin: 7px
+      margin-top: 5px
       padding: 7px
       border 2px solid black
       border-radius: 12px
       background-color: white
+      
+    button.text_change_selected
+      border 4px solid black
+      font-weight: bold
+      background-color: lightBlue
 
 // Utilities
 #home
@@ -181,7 +181,7 @@ span.main
   font-weight: bold
   
 div.main_picture, div.text_wrapper, div.main_box, div.menu_container, div.page_state,
-div.skills.section, div.demos.section
+div.skills.section, div.demos.section, div.menu_bar, div.menu_center, div.menu_icon
   margin-left: auto
   margin-right: auto
    
@@ -194,3 +194,6 @@ div.skills.section, div.demos.section
 .left_align
   text-align: left
   background-color: white
+  
+.no_display
+  display: none

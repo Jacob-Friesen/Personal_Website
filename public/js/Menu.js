@@ -19,6 +19,8 @@ var menu = {
     attach_page_events: function(pages){
         for (var page = 0; page < pages.length; page++){
             var _page = pages[page].toLowerCase();
+            if(_page.split('exp').length > 1) _page = "experience";
+            
             $("#" + _page + this.LINK_NAME)[this.EVENT]( $.proxy(this.open_link, this, _page) );
         }
     },

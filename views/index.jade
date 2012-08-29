@@ -3,14 +3,18 @@
 //How to load the correct page on entry
 .to_load(id = "#{constant.to_load}")
 
+////
 // main box
 .menu_container(id = "menu_box")
-    .menu_bar(id = "blue")
+    .menu_center#menu_center
         - var left = "_left", pages = constant.pages
         - for (var i = 0; i < pages.length; i++)
             - if(i > 0) left = ""
-            div(class = "menu_box#{left}", id = "#{pages[i].toLowerCase()}_link")
-                .menu_icon(id = "#{pages[i].toLowerCase()}")
+            
+            - page_id = pages[i].toLowerCase();
+            - if(page_id.split('exp').length > 1) page_id = "experience";
+            div(class = "menu_box#{left}", id = "#{page_id}_link")
+                .menu_icon(id = "#{page_id}")
                 center
                     span.main= pages[i]
 
@@ -18,14 +22,19 @@
 .page_state(id = "home")
 
 .main_box(id = "main_box")
+////
 
 // change page options bar, may have to use fixed positioning due to http://caniuse.com/css-fixed
 .page_options
     div.to_top
-        a(href="#top") To Top
+        a(href="#top") Top
     .page_options_inner
         span.text_change  Text:
-        button.text_change Tiny
-        button.text_change Small
-        button.text_change Normal
-        button.text_change Large
+        button.text_change#small_text_change Small
+        button.text_change#normal_text_change Normal
+        button.text_change#large_text_change Large
+        
+//Used to for proper inits
+p.no_display
+h1.no_display
+h4.no_display

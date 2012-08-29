@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://localhost/demos</td>
+	<td>http://localhost:3000/demos</td>
 	<td></td>
 </tr>
 <tr>
