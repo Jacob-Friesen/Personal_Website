@@ -10,18 +10,15 @@
         hr.no_margin#demos
         
         // Title header
-        .demos.header
+        .demos.header(id='collapse_demos_#{d}', name="#{d}")
             .demos.title
-                #demos.demos.vertical_bullet.first
                 h3.demos.vertical_title= demo_list[d].name
                 .clear
                 
-                #demos.demos.vertical_bullet
                 h4.demos.vertical_title
-                    b Demo (Flash): 
-                    a(href=demo_list[d].link[0], title=demo_list[d].link[1]) here
-                    
-            button.collapser(id='collapse_button_demos_#{d}', name="#{d}") -
+                    b Demo (Flash):
+                    a(href=demo_list[d].link[0], title=demo_list[d].link[1]) here  
+            button.collapser(id='demos_collapse_button_#{d}')
         .clear
         
         // Description

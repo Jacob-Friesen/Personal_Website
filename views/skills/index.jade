@@ -5,13 +5,9 @@
     .skills.section
         hr#skills.clear.skills
         
-        .skills.header
-            #skills.skills.vertical_bullet
+        .skills.header(id='skills_collapse_skill_#{i}', name="#{i}")
             h3.skills.vertical_title= skill_sections[i].name
-            - var value = '+';
-            - if(i == 0)
-                - value = '-';
-            button.collapser(id='skills_collapse_skill_#{i}', name="#{i}")= value
+            button.skills.collapser(id='skills_collapse_button_#{i}')
             .clear
             
         .skills.skill
@@ -19,12 +15,10 @@
                 - var skills = skill_sections[i].skills;
                 - for (var j = 0; j < skills.length; j++)
                 
-                    li.expandSkillType
+                    hr#skills.clear.skills_wide
+                    li(id='skills_point_collapse_skill_#{i}_#{j}', name="#{j}")
                         p.skill_name.no_margin.no_padding#skills_border_color(class = "_#{j}_")= skills[j].name
-                        - var value = '+';
-                        - if(i == 0)
-                            - value = '-';
-                        button.small.collapser(id='skills_point_collapse_skill_#{i}_#{j}', name="#{j}")= value
+                        button.collapser(id='skills_collapse_button_#{i}_#{j}')
                         .clear
                         
                         ul.skills.skill_details(id='collapse_point_points_skill_#{i}_#{j}', name="#{j}")

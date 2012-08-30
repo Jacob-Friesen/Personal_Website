@@ -7,20 +7,21 @@ div.demos.section
     margin-bottom: below_section
     width: 95%
 
-    .demos.title
-        width: 80%
-        float: left
-    
-        .demos.vertical_bullet.first
-            margin-top: below_section
-        .demos.vertical_bullet
-            margin-top: 0
+    .demos.header
+        position: relative
         
-        h3.demos.vertical_title, h4.demos.vertical_title
-            width: 80%
-            
-        h3.demos.vertical_title
-            margin-top: below_section
+        .demos.title
+            width: 90%
+            display: inline-block
+                
+            h3.demos.vertical_title
+                margin-top: below_section
+        
+        // vertical alignment
+        button.collapser
+            position: absolute
+            top: 50%
+            margin-top: -45%
         
     p.demo_text
         margin-top: 5px

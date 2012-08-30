@@ -5,17 +5,29 @@ div.experience.section {
 div.experience.job {
   margin: 0;
 }
-div.experience.job_summary {
-  padding: 0;
-}
 div.experience.job_summary_info {
-  padding: 20px 20px 0 20px;
-  float: left;
+  padding: 20px 0 0 20px;
+  display: inline-block;
+  width: 98%;
+}
+div.experience.job_summary_info h3.vertical_title {
+  display: block;
+}
+div.experience.job_summary_info .experience.job_titles {
+  display: inline-block;
+}
+div.experience.job_summary_info button.collapser {
+  float: right;
+  margin-top: -15px;
 }
 ul.experience.job_main_points {
   margin: 0 20px 20px 20px;
   width: 90%;
   list-style-type: square;
+}
+ul.experience.job_main_points hr.clear.above_paragraph {
+  height: 1px;
+  margin: 15px 0 30px 0;
 }
 ul.experience.job_main_points li {
   margin-bottom: 20px;
@@ -23,9 +35,6 @@ ul.experience.job_main_points li {
 }
 ul.experience.job_main_points li span {
   color: #000;
-}
-button.experience.collapser {
-  margin: 30px 30px 0 0;
 }
 div.experience.section {
   margin-left: auto;

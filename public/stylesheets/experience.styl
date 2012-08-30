@@ -4,23 +4,30 @@ div.experience.section
 
 div.experience.job
     margin: 0
-    //border: 1px solid darkGrey
-    //margin-top: 15px
-    //border-radius:7px
-    //box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5)
-    //text-align: top
-
-div.experience.job_summary
-    padding: 0
     
 div.experience.job_summary_info
-    padding: 20px 20px 0 20px
-    float: left
+    padding: 20px 0 0 20px
+    display: inline-block
+    width: 98%
+    
+    h3.vertical_title
+        display: block
+        
+    .experience.job_titles
+        display: inline-block
+        
+    button.collapser
+        float: right
+        margin-top: -15px
 
 ul.experience.job_main_points
     margin: 0 20px 20px 20px
     width: 90%
     list-style-type: square
+    
+    hr.clear.above_paragraph
+        height: 1px
+        margin: 15px 0 30px 0
 
     li
         margin-bottom: 20px
@@ -28,9 +35,6 @@ ul.experience.job_main_points
         
         span
             color: black
-            
-button.experience.collapser
-    margin: 30px 30px 0 0
 
 //utilities
 div.experience.section

@@ -4,11 +4,13 @@ module.exports = function(app){
   app.get('/demos', render_get_page);
   app.get('/experience', render_get_page);
   app.get('/skills', render_get_page);
+  app.get('/blog', render_get_page);
   
   app.post('/home', render_post_page);
   app.post('/demos', render_post_page);
   app.post('/experience', render_post_page);
   app.post('/skills', render_post_page);
+  app.post('/blog', render_post_page);
   
   // Testing only
   app.get('/test', function(req, res){

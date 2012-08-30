@@ -1,4 +1,13 @@
+//Used to for proper inits
+p.no_display
+h1.no_display
+h4.no_display
+
 #top
+
+// contact
+center.top_info
+    span <a href="mailto:F.Jacob.J@gmail.com">F.Jacob.J@gmail.com</a>, <a href="https://github.com/Jacob-Friesen/Personal_Website">source</a>
 
 //How to load the correct page on entry
 .to_load(id = "#{constant.to_load}")
@@ -6,23 +15,27 @@
 ////
 // main box
 .menu_container(id = "menu_box")
-    .menu_center#menu_center
-        - var left = "_left", pages = constant.pages
-        - for (var i = 0; i < pages.length; i++)
-            - if(i > 0) left = ""
-            
-            - page_id = pages[i].toLowerCase();
-            - if(page_id.split('exp').length > 1) page_id = "experience";
-            div(class = "menu_box#{left}", id = "#{page_id}_link")
-                .menu_icon(id = "#{page_id}")
-                center
-                    span.main= pages[i]
-
-//remove hardcoding later
+    - var pages = constant.pages
+    - for (var i = 0; i < pages.length; i++)
+        - page_id = pages[i].toLowerCase();
+        - if(page_id.split('exp').length > 1) page_id = "experience";
+        div(class = "menu_box", id = "#{page_id}_link")
+            .menu_icon(id = "#{page_id}")
+            center
+                span.main= pages[i]
 .page_state(id = "home")
 
 .main_box(id = "main_box")
 ////
+
+center
+    <a href="http://www.linkedin.com/home"><img src="images/linkedin.png"/></a>
+    <a href="https://twitter.com/Jacob_Friesen"><img src="images/twitter.png"/></a>
+    <a href="https://github.com/Jacob-Friesen"><img src="images/github.png"/></a>
+    cite Jacob Friesen 2012, <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Lic</a>.
+
+//bottom spacing so options bar never blocks a selection
+div.safety_space
 
 // change page options bar, may have to use fixed positioning due to http://caniuse.com/css-fixed
 .page_options
@@ -33,8 +46,3 @@
         button.text_change#small_text_change Small
         button.text_change#normal_text_change Normal
         button.text_change#large_text_change Large
-        
-//Used to for proper inits
-p.no_display
-h1.no_display
-h4.no_display

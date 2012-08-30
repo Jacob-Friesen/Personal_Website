@@ -1,16 +1,22 @@
 $(document).ready(function(){
     if (window.jasmine) return true;// test mode
     
+    utility.orientation_compensation();
+    window.onresize = function() { utility.orientation_compensation(); };
+    
     // Tries to load the sent in value if loaded via URL. Otherwise checks for a hash and loads using that
     var page = window.location.href.split('/#').pop();
     if (page == window.location.href)
        page = $(".to_load")[0].id;
 
     system.init_with(page);
-    return true;
+    return true; 
 });
 
 var system = {
+    SHOW: "<p>▲</p>",
+    HIDE: "<p>▼</p>",
+    
     NEW_PAGE: null,
     COLR_BAR: null,
     

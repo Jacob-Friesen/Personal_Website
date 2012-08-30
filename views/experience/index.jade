@@ -6,30 +6,24 @@
     - var jobs = constant.page_text.experience.jobs
     - for (var i = 0; i < jobs.length; i++)
         .experience.job
-            .experience.job_summary
-                .experience.job_summary_info
-                    #experience.vertical_bullet
-                    h3.vertical_title= jobs[i].position
-                    .clear
         
-                    #experience.vertical_bullet
-                    h3.vertical_title= jobs[i].company
-                    .clear
-        
-                    #experience.vertical_bullet
-                    h3.vertical_title= jobs[i].date
-                    .clear
-                - if(jobs[i].details)
-                    - var value = '+';
-                    - if(i == 0)
-                        - value = '-';
-                    button.experience.collapser(id='exp_collapse_job_#{i}', name="#{i}")= value
-
-            .clear
+            - var id = "no_details_#{i}";
+            - if (jobs[i].details)
+                - var id='exp_collapse_job_'+i;
+            .experience.job_summary_info(id=id, name=i)
+                .title_block
+                    .experience.job_titles
+                        h3.vertical_title= jobs[i].position
+                        h3.vertical_title= jobs[i].company
+                    - if (jobs[i].details)
+                        button.collapser(id='exp_collapse_button_#{i}')
+                .clear
+                h3.vertical_title= jobs[i].date
             
             // Details of Job block start
             - if (jobs[i].details)
-                ul.experience.job_main_points(id="collapse_points_job_#{i}", name="#{i}")
+                ul.experience.job_main_points(id="collapse_points_job_#{i}", name=i)
+                    hr.clear.above_paragraph
                     - var details = jobs[i].details
                     - for (var j = 0; j < details.length; j++)
                         li#experience_color(id="detail#{i}-#{j}")

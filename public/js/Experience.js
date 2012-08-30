@@ -1,17 +1,17 @@
 experience = {
     init: function(){
         utility.attach_show_events({
-            triggers: $('button[id^=exp_collapse_]'),
-            event: "mousemove",
+            triggers: $('div[id^=exp_collapse_job_]'),
+            event: "click",
             collapsers: $('ul[id^=collapse_points_]'),
             delay: false,
             on_show: function(trigger, collapser){
                 $(collapser).show();
-                trigger.innerHTML = "-";
+                $('#exp_collapse_button_' + trigger.id.split('_').pop())[0].innerHTML = system.SHOW;
             },
             on_hide: function(trigger, collapser){
-                 $(collapser).hide();
-                trigger.innerHTML = "+";
+                $(collapser).hide();
+                $('#exp_collapse_button_' + trigger.id.split('_').pop())[0].innerHTML = system.HIDE;
             }
         }).close("all").open(0);
     }

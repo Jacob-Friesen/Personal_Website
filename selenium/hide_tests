@@ -17,17 +17,17 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=exp_collapse_job_0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job_0</td>
-	<td>+</td>
+	<td>id=exp_collapse_button_0</td>
+	<td>▼</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=exp_collapse_job_0</td>
 	<td></td>
 </tr>
@@ -38,21 +38,21 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job_0</td>
-	<td>-</td>
+	<td>id=exp_collapse_button_0</td>
+	<td>▲</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=exp_collapse_job_1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job_1</td>
-	<td>-</td>
+	<td>id=exp_collapse_button_1</td>
+	<td>▲</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=exp_collapse_job_1</td>
 	<td></td>
 </tr>
@@ -63,8 +63,8 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=exp_collapse_job_1</td>
-	<td>+</td>
+	<td>id=exp_collapse_button_1</td>
+	<td>▼</td>
 </tr>
 <tr>
 	<td>open</td>
@@ -72,17 +72,17 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=skills_collapse_skill_0</td>
-	<td>-</td>
+	<td>id=skills_collapse_button_0</td>
+	<td>▲</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_0</td>
 	<td></td>
 </tr>
@@ -93,18 +93,18 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=skills_collapse_skill_0</td>
-	<td>+</td>
+	<td>id=skills_collapse_button_0</td>
+	<td>▼</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=skills_collapse_skill_1</td>
-	<td>-</td>
+	<td>id=skills_collapse_button_1</td>
+	<td>▲</td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
@@ -112,22 +112,22 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=skills_collapse_skill_1</td>
-	<td>+</td>
+	<td>id=skills_collapse_button_1</td>
+	<td>▼</td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_point_collapse_skill_1_1</td>
 	<td></td>
 </tr>
@@ -137,12 +137,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_collapse_skill_3</td>
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
+	<td>click</td>
 	<td>id=skills_point_collapse_skill_3_1</td>
 	<td></td>
 </tr>
@@ -157,8 +157,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
-	<td>id=collapse_button_demos_2</td>
+	<td>click</td>
+	<td>id=collapse_demos_2</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,8 +167,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>mouseMove</td>
-	<td>id=collapse_button_demos_3</td>
+	<td>click</td>
+	<td>id=collapse_demos_3</td>
 	<td></td>
 </tr>
 <tr>

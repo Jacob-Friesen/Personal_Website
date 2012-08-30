@@ -126,7 +126,7 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Apache Tomcat Web Container (4 months)",
+                            name: "Apache Tomcat (4 months)",
                             details: [
                                 "Apache Tomcat Web Container (4 months)",
                                 "Knowlegde of general Tomcat administration; adding users with different privaleges, installing libraries i.e. \
@@ -134,7 +134,7 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Oracle Glassfish Web Container (4 months)",
+                            name: "Oracle Glassfish (4 months)",
                             details: [
                                 " 4 months of managing the Glassfish server for a mid-sized government website."
                             ]
@@ -162,7 +162,7 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Windows Vista and Windows 7 (2.5 years)",
+                            name: "Windows Vista and 7 (2.5 years)",
                             details: [
                                 "2 years of Windows Vista experience.",
                                 "1 year of Windows 7 experience.",
@@ -197,9 +197,9 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Website Design and Development (5 years)",
+                            name: "Web Design (5 years)",
                             details: [
-                                "Demonstrated knowlegde of how to deal with and overcome the unique challenges of web development such as dealing with browser \
+                                "Demonstrated knowlegde of how to deal with and overcome the unique challenges of web design such as dealing with browser \
                                 specific display issues.",
                                 "Know basic web application and web server architectures.",
                                 " Strong knowlegde of search engine optimization (SEO) and other concepts surrounding web development."
@@ -274,8 +274,8 @@ module.exports = {
                            not all components of them are downloadable. Click on an image to see a larger version.",
             demos: [
                 {
-                    name: "Iders Information Management Website",
-                    description: "In the Fall coop term of 2011 I worked on this website at Iders with some other Web Developers. I mainly worked on a \
+                    name: "Iders IMS Website",
+                    description: "In the Fall coop term of 2011 I worked on the information management website at Iders with some other Web Developers. I mainly worked on a \
                                   distributed system, which is detailed in the experience section for Iders. Since I wanted to have a short demo the below \
                                   video is of an additional feature I implemented which is automatically opening the windows you had open from last \
                                   session in the current session. Keep in mind this is a web interface.",
@@ -300,7 +300,7 @@ module.exports = {
                     link: ["video.html", "Jacob Friesen demonstrating the RWRP website"]
                 },
                 {
-                    name: "Movie Organizer Project",
+                    name: "Movie Organizer",
                     description: "This is a GUI application that manages a database of movies for a user. The user can create, add or edit any movie. Movies \
                                   have data about their title, director(s), actors, description etc. This project was designed with another student for my \
                                   Human Computer Interaction course. The focus was on user interaction not developing an entire application so the database \
@@ -326,6 +326,11 @@ module.exports = {
                     link: ["http://www.jacobfriesen.com/downloads/contactList.zip", "Jacob Friesen Contact List Download"]
                 }
             ]
+        },
+        
+        blog: {
+            title: "Blog - Jacob Friesen",
+            introduction: "Coming soon..."
         }
     }
 }

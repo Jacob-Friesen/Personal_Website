@@ -15,6 +15,15 @@ utility = {
         return this;
     },
     
+    // Modifies top menu icon spacing values to reflect window size change. Will not work when virtual keyboard is used but
+    // that isn't used in this site.
+    orientation_compensation: function(){
+        if (window.innerHeight > window.innerWidth)  
+            $('#home_link').css('margin-left', 0);
+        else if(window.innerHeight< window.innerWidth) 
+            $('#home_link').css('margin-left', '33px');
+    },
+    
     // (psuedo-function)
     // Cycles through each element retrieved by collapse_with attaching the specified action to an event. When this event is
     // triggered the id of the current object is found and put in behind the collapse_to selector. If delay is sent the function
@@ -113,11 +122,11 @@ utility = {
     update_layout: {
         
         changes: {
-            '#menu_center': {
-                0.75: ['width', '95.75%'],
-                1: ['width', '95.75%'],
-                1.25: ['width', '100%']
-            }
+            //'#menu_center': {
+            //    0.75: ['width', '95.75%'],
+            //    1: ['width', '95.75%'],
+            //    1.25: ['width', '100%']
+            //}
         },
         
         // Updates the selector (if it can be found) with the appropriate values

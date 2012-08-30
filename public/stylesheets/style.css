@@ -1,5 +1,4 @@
 body {
-  padding-top: 10px;
   font: 45px Helvetica, "Lucida Grande", Arial, sans-serif;
   background-color: darkGrey;
 }
@@ -13,42 +12,30 @@ h4 {
   font-size: 45px;
 }
 div.page_state {
-  width: 865px;
+  width: 98%;
   height: 20px;
 }
 div.main_box,
 div.menu_container {
-  width: 875px;
+  width: 99%;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 0 0 15px 15px;
 }
 div.menu_container {
   border-radius: 15px 15px 0 0;
+  width: 99%;
 }
-div.menu_container div.menu_bar {
-  border-radius: 15px 15px 0 0;
-  border: 0 solid #000;
-  border-bottom-width: 2px;
-  height: 185px;
-}
-div.menu_container div.menu_center {
-  width: 95.75%;
-}
-div.menu_container div.menu_center div.menu_box,
-div.menu_container div.menu_center div.menu_box_left {
+div.menu_container div.menu_box {
   display: inline-block;
   padding: 10px;
+  width: 17.82%;
 }
-div.menu_container div.menu_center div.menu_box div.menu_icon,
-div.menu_container div.menu_center div.menu_box_left div.menu_icon {
+div.menu_container div.menu_box div.menu_icon {
   border: solid 2px #000;
   border-radius: 30px;
   height: 130px;
   width: 140px;
-}
-div.menu_container div.menu_center div.menu_box_left {
-  margin-left: 10px;
 }
 div.title_bar {
   text-align: center;
@@ -59,46 +46,59 @@ div.text_wrapper {
   width: 90%;
   text-align: center;
 }
-div.vertical_bullet {
-  margin: 3.5px 0 12.5px 0;
-  float: left;
-  height: 30px;
-  width: 10px;
-  background-color: #000;
-}
 h3.vertical_title,
 h4.vertical_title {
   padding: 0;
   margin: 0 0 15px 0;
-  float: left;
+  display: inline-block;
   margin-left: 10px;
   background-color: #fff;
 }
 button.collapser {
-  float: right;
-  border: 1px solid #000;
-  height: 130px;
-  width: 140px;
-  border: 0px solid #000;
-  background-color: #fff;
-  font-size: 100px;
+  display: inline;
+  vertical-align: middle;
+  height: 100%;
+  width: 80px;
+  margin-top: 0;
+  border: 0;
+  background-color: transparent;
+}
+button.collapser p {
+  font-size: 70px;
 }
 button.small {
   height: 50px;
   width: 40px;
   font-size: 50px;
 }
+center.top_info {
+  color: #fff;
+  margin-top: -7px;
+}
+center.top_info span a {
+  color: #fff;
+}
+center img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  padding-right: 5px;
+}
+cite {
+  float: top;
+  color: #fff;
+}
+cite a {
+  color: #fff;
+}
 div.main_picture {
-  -moz-border-radius: 15px;
   border-radius: 15px;
-  -moz-box-shadow: inset 0px 0px 5px #000;
   box-shadow: inset 0px 0px 5px #000;
   border: 2px solid #000;
   width: 90%;
   height: 350px;
 }
 img.main_image {
-  -moz-border-radius: 7px;
   border-radius: 7px;
   width: 100%;
   height: 100%;
@@ -141,6 +141,9 @@ div.page_options div.page_options_inner button.text_change_selected {
   border: 4px solid #000;
   font-weight: bold;
   background-color: lightBlue;
+}
+div.safety_space {
+  height: 120px;
 }
 #home {
   background-color: lightBlue;
@@ -196,7 +199,7 @@ div.menu_container,
 div.page_state,
 div.skills.section,
 div.demos.section,
-div.menu_bar,
+div.blog.section,
 div.menu_center,
 div.menu_icon {
   margin-left: auto;
@@ -211,6 +214,9 @@ div.menu_icon {
 .left_align {
   text-align: left;
   background-color: #fff;
+}
+.float_right {
+  float: right;
 }
 .no_display {
   display: none;
