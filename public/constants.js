@@ -3,7 +3,7 @@ module.exports = {
     pages: [
         "Home",
         "Skills",
-        "Exp.",
+        "Experience",
         "Demos",
         "Blog"
     ],
@@ -280,7 +280,8 @@ module.exports = {
                                   video is of an additional feature I implemented which is automatically opening the windows you had open from last \
                                   session in the current session. Keep in mind this is a web interface.",
                     image: ["images/IdersIMS2_s.png", "Iders IMS2 Screen Picture"],
-                    link: ["videoIMS.html", "Jacob Friesen demonstrating IMS2 auto window session loading"]
+                    link_text: 'Video (Flash): ',
+                    link: ["http://www.youtube.com/watch?v=1tB5szfXYCo", "Jacob Friesen demonstrating IMS2 auto window session loading"]
                 },
                 {
                     name: "Nutrifacts Project",
@@ -289,6 +290,7 @@ module.exports = {
                                   user preferences. These preferences are in the form of ratings which influence along with the filters the suggested \
                                   items for each item selected.",
                     image: ["images/nutrifactsMainScreen_s.jpg", "Nutrifacts main screen picture"],
+                    link_text: 'Java Source Code (Zipped): ',
                     link: ["http://www.jacobfriesen.com/downloads/nutrifacts.zip", "Jacob Friesen Nutrifacts Project Download"]
                 },
                 {
@@ -297,7 +299,8 @@ module.exports = {
                                   of the website; design, front end, and back end. Since the website is proprietary (and not online yet) I have included \
                                   a video demoing one of the features I worked on as a link below.",
                     image: ["images/RWRPMain_s.jpg", "RWRP website picture"],
-                    link: ["video.html", "Jacob Friesen demonstrating the RWRP website"]
+                    link_text: 'Video (Flash): ',
+                    link: ["http://www.youtube.com/watch?v=hV-JQ9dC2nI", "Jacob Friesen demonstrating the RWRP website"]
                 },
                 {
                     name: "Movie Organizer",
@@ -306,6 +309,7 @@ module.exports = {
                                   Human Computer Interaction course. The focus was on user interaction not developing an entire application so the database \
                                   is just an XML file and there may be some small display glitches.",
                     image: ["images/movOrgPic_s.jpg", "Jacob Friesen Movie Organizer Picture"],
+                    link_text: 'C# Source Code (Zipped): ',
                     link: ["http://www.jacobfriesen.com/downloads/MovieOrganizerSource.zip", "Jacob Friesen Movie Organizer Download"]
                 },
                 {
@@ -315,6 +319,7 @@ module.exports = {
                                   patients have the same condition the first one that requests treatment is treated first. This project was done for my Object \
                                   Orientation (Comp 2150) course.",
                     image: ["images/schedulingHsptl_s.jpg", "Jacob Friesen Doctor Scheduling Picture"],
+                    link_text: 'Java Source Code (Zipped): ',
                     link: ["http://www.jacobfriesen.com/downloads/schedulePatients.zip", "Jacob Friesen Patient Scheduler Download"]
                 },
                 {
@@ -323,6 +328,7 @@ module.exports = {
                                   numbers which is read from a XML file. Using this application you can add, delete or edit any entry clicked on in the list \
                                   display. This was done as part of an assignment I had in my current Human Computer Interaction course.",
                     image: ["images/contactList_s.jpg", "Jacob Friesen Contact List Picture"],
+                    link_text: 'C# Source Code (Zipped): ',
                     link: ["http://www.jacobfriesen.com/downloads/contactList.zip", "Jacob Friesen Contact List Download"]
                 }
             ]

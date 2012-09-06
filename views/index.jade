@@ -18,11 +18,10 @@ center.top_info
     - var pages = constant.pages
     - for (var i = 0; i < pages.length; i++)
         - page_id = pages[i].toLowerCase();
-        - if(page_id.split('exp').length > 1) page_id = "experience";
         div(class = "menu_box", id = "#{page_id}_link")
             .menu_icon(id = "#{page_id}")
             center
-                span.main= pages[i]
+                span.main= pages[i].replace('Experience', 'Exp.')
 .page_state(id = "home")
 
 .main_box(id = "main_box")
