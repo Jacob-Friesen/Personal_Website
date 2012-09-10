@@ -1,13 +1,13 @@
 // modified from http://javascript.crockford.com/prototypal.html
-if (typeof Object.new !== 'function') {
-    Object.new = function (o) {
+if (typeof Object.nu !== 'function') {
+    Object.nu = function (o) {
         function F() {};
         F.prototype = o;
         return new F();
     };
-} else { throw("Object.new is already defined"); }
+} else { alert("Object.nu is already defined"); }
 
-utility = {
+var utility = {
     
     init: function(){
         this.change_text.init();
@@ -18,9 +18,9 @@ utility = {
     // Modifies top menu icon spacing values to reflect window size change. Will not work when virtual keyboard is used but
     // that isn't used in this site.
     orientation_compensation: function(){
-        if (window.innerHeight > window.innerWidth)  
+        if (Math.abs(window.orientation) != 90)  
             $('#home_link').css('margin-left', 0);
-        else if(window.innerHeight< window.innerWidth) 
+        else
             $('#home_link').css('margin-left', '33px');
     },
     
@@ -115,7 +115,7 @@ utility = {
             }
         }
         
-        return Object.new(attacher.init(params["delay"]));
+        return Object.nu(attacher.init(params["delay"]));
     },
     
     // handles updating of layouts
