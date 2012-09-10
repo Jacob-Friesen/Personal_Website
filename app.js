@@ -1,4 +1,4 @@
-var PORT = process.argv[2];
+var PORT = process.env.PORT;
 
 /**
  * Module dependencies.

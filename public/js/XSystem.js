@@ -64,7 +64,10 @@ var system = {
         utility.change_text.change_size_by(utility.change_text.current_scale);
     },
     
+    //Shows a temporary loading message then replaces the page when the page has loaded
     load_page: function(page, data, callback){
+        this.NEW_PAGE[0].innerHTML = "<center>Loading...<center>";
+        
         this.NEW_PAGE.load('/' + page, data, callback);
     },
   
@@ -79,5 +82,6 @@ var system = {
     
     experience: experience,
     skills: skills,
-    demos: demos
+    demos: demos,
+    blog: {init:function(){}}
 };

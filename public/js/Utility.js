@@ -21,7 +21,7 @@ var utility = {
         if (Math.abs(window.orientation) != 90)  
             $('#home_link').css('margin-left', 0);
         else
-            $('#home_link').css('margin-left', '33px');
+            $('#home_link').css('margin-left', $(window).width() * 0.0225);
     },
     
     // (psuedo-function)
