@@ -37,11 +37,11 @@ center
 div.safety_space
 
 // change page options bar, may have to use fixed positioning due to http://caniuse.com/css-fixed
-.page_options
-    div.to_top
-        a(href="#top") Top
+.page_options.no_padding
+    .to_top
+        a.to_top(href="#top") Top
     .page_options_inner
-        span.text_change  Text:
+        span.text_change Text:
         button.text_change#small_text_change Small
         button.text_change#normal_text_change Normal
         button.text_change#large_text_change Large

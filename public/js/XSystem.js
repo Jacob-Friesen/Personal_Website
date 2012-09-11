@@ -1,4 +1,4 @@
-$(document).ready(function init_page(){
+$(document).ready(function (){
     if (window.jasmine) return true;// test mode
     
     utility.orientation_compensation();
@@ -11,8 +11,6 @@ $(document).ready(function init_page(){
 
     system.init_with(page);
     
-    // If keyboard is up when searching for site this will compensate
-    setTimeout(function() {utility.orientation_compensation();}, 3000);
     return true; 
 });
 
@@ -51,7 +49,7 @@ var system = {
         $('button[id$="text_change"]').each(function(){
             this.className = "text_change";
         })
-        button.className = "text_change_selected";
+        if(button) button.className = "text_change_selected";
     },
     
     page_init: function(page){    

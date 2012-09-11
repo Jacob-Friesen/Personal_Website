@@ -50,7 +50,7 @@ module.exports = {
                             details: [
                                 "3 years total spent at school working with Java in Desktop projects and Android based devices.",
                                 "4 months of developing server side code for a mid-sized website.",
-                                "Knowlegde of OO design and programming in Java including the Model View Controller (MVC) design.",
+                                "Knowlegde of OO design and programming in Java including the Model View Controller (MVC) design."
                             ]
                         },
                         {
@@ -59,7 +59,7 @@ module.exports = {
                                 "1 year of general and school project experience.",
                                 "4 months of working with a complex one page website using XML.",
                                 "Knowlegde of creating well formed XML.",
-                                "Knowlegde of reading XML files in multiple languages like Javascript and Python.",
+                                "Knowlegde of reading XML files in multiple languages like Javascript and Python."
                             ]
                         },
                         {
@@ -137,15 +137,15 @@ module.exports = {
                         {
 			    name: "Apache HTTP Server (1.5 years)",
 			    details: [
-				"Directly managed a server on my first coop work term and for my personal websites.",
-				"Know basic admin such as defining document roots in the httpd file.",
+				    "Directly managed a server on my first coop work term and for my personal websites.",
+				    "Know basic admin such as defining document roots in the httpd file."
 			    ]
                         },
                         {
                             name: "MS Visual Studio (4 months)",
                             details: [
                                 "4 months of using this tool for C# based for school projects.",
-                                "Demonstrated knowlegde of GUI design tools.",
+                                "Demonstrated knowlegde of GUI design tools."
                             ]
                         },
                         {
@@ -153,7 +153,7 @@ module.exports = {
                             details: [
                                 "Apache Tomcat Web Container (4 months)",
                                 "Knowlegde of general Tomcat administration; adding users with different privaleges, installing libraries i.e. \
-                                JSF,configuring server wide variables.",
+                                JSF,configuring server wide variables."
                             ]
                         },
                         {
@@ -170,7 +170,7 @@ module.exports = {
                                 "Basic photo manipulation in Photoshop.",
                                 "Intermediate knowledge of Microsoft Office and Open Office."
                             ]
-                        },
+                        }
                     ]
                 },
                 {
@@ -274,12 +274,12 @@ module.exports = {
         experience: {
             title: "Experience - Jacob Friesen",
             jobs: [
-		    {
+		    				{
                     position: "Web Developer",
                     company: "CanadaDrugs.com",
                     date: "May 2012 - August 2012",
                     details: [
-												"details pending..."
+			"details pending..."
                     ]
                 },
                 {
@@ -293,7 +293,7 @@ module.exports = {
 				with some JavaScript (Titanium Studio Libraries) and ZPL.",
                         "Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement \
                         state between sessions. (See the demo description)",
-				"All work was done in Ubuntu (Linux variant)."
+			"All work was done in Ubuntu (Linux variant)."
                     ]
                 },
                 {
@@ -306,7 +306,7 @@ module.exports = {
                         Client side development mainly involved designing graphical user interfaces for the website's tools.",
                         "Participated in defining user experience, page designs, software architecture and other web application essentials \
                         for the whole website.",
-				"All work was done in Windows."
+			"All work was done in Windows."
                     ]
                 },
                 {
@@ -318,7 +318,7 @@ module.exports = {
                     position: "Landscaper",
                     company: "Little Bud's Tree Farm",
                     date: "June 2009 - August 2009"
-                },
+                }
             ]
         },
         

@@ -18,10 +18,13 @@ var utility = {
     // Modifies top menu icon spacing values to reflect window size change. Will not work when virtual keyboard is used but
     // that isn't used in this site.
     orientation_compensation: function(){
-        if (Math.abs(window.orientation) != 90)  
+        if (Math.abs(window.orientation) != 90){
             $('#home_link').css('margin-left', 0);
+            if ($(window).width() > 899)
+                $('#home_link').css('margin-left', '10px');
+        }
         else
-            $('#home_link').css('margin-left', $(window).width() * 0.0225);
+            $('#home_link').css('margin-left', $(window).width() * 0.025);
     },
     
     // (psuedo-function)
@@ -145,8 +148,9 @@ var utility = {
         current_scale: 1,
         
         // Each of these gets a original_font_size set. Also very inefficient.
+        // In the form: selector, default font size
         TO_CHANGE: [
-            [document.body, -1],//selector, default font size
+            ['#body', -1],//some browsers can't reference document.body
             ['h1', -1],
             ['h4', -1]
         ],
@@ -161,7 +165,7 @@ var utility = {
         init: function(){
             for(var i = 0; i < this.TO_CHANGE.length; i++){
                 var element = $(this.TO_CHANGE[i][0]).first();
-                
+
                 if (element[0])
                     this.TO_CHANGE[i][1] = Number(element.css('font-size').replace('px',''));
             }
@@ -188,4 +192,5 @@ var utility = {
             utility.update_layout.update(multiple);
         }
     }
-}.init();
+};
+$(document).ready(function(){ utility.init(); });
