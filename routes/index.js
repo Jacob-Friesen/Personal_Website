@@ -12,6 +12,13 @@ module.exports = function(app){
   app.post('/skills', render_post_page);
   app.post('/blog', render_post_page);
   
+  // gzipping main js file
+  app.get('/js/min.js', function (req, res, next) {
+    res.header('Content-Encoding', 'gzip');
+    req.url = req.url + '.gz';
+    next();
+  });
+  
   // Testing only
   app.get('/test', function(req, res){
     res.render('test/index.html', {layout: false});

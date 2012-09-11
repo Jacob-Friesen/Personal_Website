@@ -6,7 +6,6 @@ var PORT = process.argv[2];
 
 global.constant = require('./public/constants.js');
 var express = require('express');
-var connect = require('connect');
 var app = module.exports = express.createServer();
 
 // Configuration
@@ -19,7 +18,6 @@ app.configure(function(){
   app.use(express.session({ secret: 'your secret here' }));
   app.use(require('stylus').middleware({ src: __dirname + '/public' }));
   app.use(app.router);
-  app.use(connect.static(__dirname + '/public'));
   app.use(express.static(__dirname + '/public'));
   
   // Testing only
