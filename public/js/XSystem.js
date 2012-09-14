@@ -8,7 +8,7 @@ $(document).ready(function (){
     var page = window.location.href.split('/#').pop();
     if (page == window.location.href)
        page = $(".to_load")[0].id;
-
+       
     system.init_with(page);
     
     return true; 
@@ -40,6 +40,20 @@ var system = {
         system.update_text('normal', $('#normal_text_change')[0]);
     },
     
+    // Compensates for all browsers not supporting float.
+    handle_float: function(){
+        if(utility.browser_that_supports_float(navigator.userAgent))
+            return false;
+        
+        $('#page_options').css('position', 'relative').css('float', 'right').width(700);
+        $('#safety_space').height(30);
+        // make sure page options is always at the very bottom of the page, if not move it there.
+        if($('#page_options').offset().top < $(window).height())
+            $('#safety_space').height($(window).height() - $('#page_options').offset().top);
+            
+        return true;
+    },
+    
     // Adjust the size of the text based on size. Then updates the element to show that it is
     // disabled, and all the other ones are now not disabled.
     update_text: function(size, button){
@@ -60,6 +74,8 @@ var system = {
         
         // make sure text is in the right size on page load
         utility.change_text.change_size_by(utility.change_text.current_scale);
+        
+        this.handle_float();
     },
     
     //Shows a temporary loading message then replaces the page when the page has loaded

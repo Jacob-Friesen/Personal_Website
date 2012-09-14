@@ -21,10 +21,34 @@ var utility = {
         if (Math.abs(window.orientation) != 90){
             $('#home_link').css('margin-left', 0);
             if ($(window).width() > 899)
-                $('#home_link').css('margin-left', '10px');
+                $('#home_link').css('margin-left', '1%');
+            if ($(window).width() > 1000)
+                $('#home_link').css('margin-left', '2.5%');
         }
         else
             $('#home_link').css('margin-left', $(window).width() * 0.025);
+    },
+    
+    // Currently checks for iOS >= 5 which will support modern effects like fixed so check for that. User agent string must be
+    // passed in.
+    // NOTE: This must be updated on a regular basis.
+    browser_that_supports_float: function(user_agent){
+        var DEVICE = 'iphone';
+        var SPLITTERS = ['iphone os ', ' like'];//this must be exact, including spacing
+        
+        if(user_agent == null) return true;
+        
+        var navuser_lower = user_agent.toLowerCase();
+        if (navuser_lower.search(DEVICE) > 0){
+            var nav_split = navuser_lower.split(SPLITTERS[0]);
+            var os_version = nav_split[nav_split.length - 1].split(SPLITTERS[1])[0];
+            
+            // if OS major version is below 5
+            if (Number(os_version.split('_')[0]) <= 4)
+                return false
+        }
+        
+        return true;
     },
     
     // (psuedo-function)

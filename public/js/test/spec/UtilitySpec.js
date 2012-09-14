@@ -153,4 +153,31 @@ describe("Utility", function() {
             
         });
     });
+    
+    // There are a lot of tests for this because small changes in certian browsers user strings could possible wreck this.
+    describe("browser_that_supports_float", function() {
+        it("should return true when the user agent string is null", function(){
+            expect(utility.browser_that_supports_float(null)).toBe(true);
+        });
+        
+        it("should return true when the user agent string is empty", function(){
+            expect(utility.browser_that_supports_float('')).toBe(true);
+        });
+        
+        it("should return true when the user agent string is from firefox", function(){
+            expect(utility.browser_that_supports_float('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:12.0) Gecko/20100101 Firefox/12.0')).toBe(true);
+        });
+        
+        it("should return true when the user agent string is from desktop safari", function(){
+            expect(utility.browser_that_supports_float('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3')).toBe(true);
+        });
+        
+        it("should return true when the user agent string is from modern mobile safari", function(){
+            expect(utility.browser_that_supports_float('Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3')).toBe(true);
+        });
+        
+        it("should return false when the user agent string is from old < 5 mobile safari", function(){
+            expect(utility.browser_that_supports_float('UserAgent: Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5')).toBe(false);
+        });
+    });
 });

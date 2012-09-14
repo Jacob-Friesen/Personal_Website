@@ -1,6 +1,8 @@
 body {
   font: 45px Helvetica, "Lucida Grande", Arial, sans-serif;
   background-color: darkGrey;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   padding: 0;
