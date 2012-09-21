@@ -274,12 +274,17 @@ module.exports = {
         experience: {
             title: "Experience - Jacob Friesen",
             jobs: [
-		    				{
+				{
                     position: "Web Developer",
                     company: "CanadaDrugs.com",
                     date: "May 2012 - August 2012",
                     details: [
-			"details pending..."
+                        "Worked on Panda the internal web application that manages most of the business including all of the product ordering \
+						coming from all of the online pharmacy sites. Worked in an agile Kanban environment.",
+                        "Used HAML, JavaScript (with lots of JQuery and AJAX), and SCSS to design and update front end interfaces.",
+                        "The backend was code with Ruby on Rails connecting to a MYSQL database.",
+                        "Additionally improved small internal management application with a Twitter Bootstrap interface and Ruby on Rails backend.",
+						"Most of the code was done in Mac OS X with some basic CLI server admin in CentOS (Linux variant)."
                     ]
                 },
                 {
