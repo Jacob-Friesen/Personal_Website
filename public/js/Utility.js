@@ -15,20 +15,6 @@ var utility = {
         return this;
     },
     
-    // Modifies top menu icon spacing values to reflect window size change. Will not work when virtual keyboard is used but
-    // that isn't used in this site.
-    orientation_compensation: function(){
-        if (Math.abs(window.orientation) != 90){
-            $('#home_link').css('margin-left', 0);
-            if ($(window).width() > 899)
-                $('#home_link').css('margin-left', '1%');
-            if ($(window).width() > 1000)
-                $('#home_link').css('margin-left', '2.5%');
-        }
-        else
-            $('#home_link').css('margin-left', $(window).width() * 0.025);
-    },
-    
     // Currently checks for iOS >= 5 which will support modern effects like fixed so check for that. User agent string must be
     // passed in.
     // NOTE: This must be updated on a regular basis.

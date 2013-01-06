@@ -1,9 +1,6 @@
 $(document).ready(function (){
     if (window.jasmine) return true;// test mode
     
-    utility.orientation_compensation();
-    window.onresize = function() { utility.orientation_compensation(); };
-    
     // Tries to load the sent in value if loaded via URL. Otherwise checks for a hash and loads using that
     var page = window.location.href.split('/#').pop();
     if (page == window.location.href)

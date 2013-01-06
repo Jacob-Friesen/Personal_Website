@@ -13,7 +13,14 @@ module.exports = {
             title: "Jacob Friesen - Web Developer",
             introduction: "Hello, I'm a Computer Science Honours Co-op student from the University of Manitoba. \
                            Currently I'm in a school term. My specialties are in scripting languages and web development. \
-				   I will graduate by April 2013."
+						   I will graduate by April 2013. I have worked in Django, Ruby on Rails, Java (JSF), and Node.js \
+						   environments.",
+			specialty_title: "Specialties",
+			specialties: [
+				"JavaScript",
+				"HTML/CSS",
+				"Full-stack web development"
+			]
         },
         
         skills: {
@@ -28,7 +35,8 @@ module.exports = {
                                 "12 months over 3 coop work terms, the rest of may experience mainly comes from my spare time.",
                                 "Strong Knowlegde of layout intricacies such as vertical positioning of elements without using tables.",
                                 "Knowlegde of multiple layout styles and how to make scalable layouts",
-                                "3 months experience of doing a fully custom mobile layout (see my personal website with your phone).",
+                                "3.5 months experience of doing custom mobile layouts. See winnipegjs.com and this website with your phone.",
+								"I know general CSS3 layout techniques like <element>:first-child",
                                 "I have also spent a few months working with HAML, Jade, SCSS, and Stylus."
                             ]
                         },
@@ -37,12 +45,11 @@ module.exports = {
                             details: [
                                 "12 months over 3 coop work terms, the rest of may experience mainly comes from my spare time.",
                                 "Strong knowlegde of advanced core concepts in pure Javascript such as Prototypalism and Closures.",
-                                "Have worked in multiple JS libraries including JQuery and ExtJS, even mobile ones like Titaniums library.",
+                                "Have worked in multiple JS libraries including JQuery and ExtJS, even mobile ones like Titanium's library.",
                                 "I have also developed some small JQuery plugins and pure JS libraries over the years.",
                                 "I have spent years dealing with browser incompatability issues including JQuery and pure JavaScript issues, \
                                 and have gained a strong knowledge of how the DOM works.",
-                                "Worked on backend JavaScript using Node.js for 3 months on both versions of this website, desktop and mobile.",
-                                "Additionally I have coded small and fast code for a mobile website (see my personal website with your phone)."
+                                "Worked on backend JavaScript using Node.js for 3 months on this website and the mobile interface for winnipegjs.com"
                             ]
                         },
                         {
@@ -65,31 +72,48 @@ module.exports = {
                         {
                             name: "JSON (1 year)",
                             details: [
-                                "8 months spread over 2 jobs and some experience in university. Additionally I use JSON heavily in websites I \
+                                "8 months experience spread over 2 jobs and some experience in university. Additionally I use JSON heavily in the websites I \
                                 build in my spare time.",
-                                "Have knowlegde of creating well formed JSON and parsing it through in multiple languages."
+                                "Have knowlegde of creating well formed JSON and parsing it in multiple languages."
                             ]
                         },
                         {
-			    name: "SQL (1 year)",
-			    details: [
-				"4 months of school experience and 8 months of work experience.",
-				"Knowledge of good SQL schema design and querying techniques."
-			    ]
+							name: "SQL (1 year)",
+							details: [
+							"8 months of work experience and 4 months of school experience.",
+							"Knowledge of good SQL schema design and querying techniques."
+							]
                         },
                         {
-                            name: "Python (8 months)",
+                            name: "Django and Python (8 months)",
                             details: [
-                                "4 months of school experience and 4 months of work experience at Iders (see experience for more info).",
-                                "Knowledge of good Python techniques such as OO and module loading."
+                                "4 months of school experience and 4 months of work experience at Iders using Django (see experience for more info).",
+                                "Knowledge of good Python techniques such as OO and module loading.",
+								"Updated and added components to a Django based website."
                             ]
                         },
                         {
-			    name: "Ruby (8 months)",
-			    details: [
-				"4 months of school experience and 4 months of work experience at CanadaDrugs.com (see experience for more info).",
-				"Knowledge of good Ruby techniques such as OO."
-			    ]
+							name: "Ruby and Ruby on Rails (8 months)",
+							details: [
+								"4 months of school experience and 4 months of work experience at CanadaDrugs.com, both using Ruby on Rails.",
+								"Knowledge of good Ruby techniques such as OO.",
+								"Know the architecture and general design patterns of Ruby on Rails web applications."
+							]
+						},
+						{
+                            name: "C/C++ (8 months)",
+                            details: [
+                                "Programmed C and C++ code for 4 months on low level school based projects.",
+								"See aes for an example of a larger c style program I created."
+                            ]
+                        },
+						{
+                            name: "Node.js (8 months)",
+                            details: [
+                                "Updated my website from a PHP to Node architecture 8 months ago. I continue to update it.",
+								"Designed a mobile interface for winnipegjs.com which runs on Node that included some backend code.",
+								"Have worked in pure Node and Express.js architectures."
+                            ]
                         },
                         {
                             name: "JSP and JSF (4 months)",
@@ -107,13 +131,7 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "C/C++ (4 months)",
-                            details: [
-                                "Programmed C and C++ code for 4 months on low level school based projects."
-                            ]
-                        },
-                        {
-                            name: "Basic knowlegde of",
+                            name: "Basic Knowlegde Of:",
                             details: [
                             	"Objective C",
                             	"ZPL",
@@ -128,18 +146,18 @@ module.exports = {
                     name: "Tools",
                     skills: [
                         {
-                            name: "Eclipse (2.5 years)",
+                            name: "Eclipse (3 years)",
                             details: [
                                 "4 months using Eclipse at my first work term and the rest at school",
                                 "I used Eclipse mainly for standard Java development, including Android development."
                             ]
                         },
                         {
-			    name: "Apache HTTP Server (1.5 years)",
-			    details: [
-				    "Directly managed a server on my first coop work term and for my personal websites.",
-				    "Know basic admin such as defining document roots in the httpd file."
-			    ]
+							name: "Apache HTTP Server (2 years)",
+							details: [
+								"Directly managed a server on my first coop work term and for my personal websites.",
+								"Know basic admin such as defining document roots in the httpd file."
+							]
                         },
                         {
                             name: "MS Visual Studio (4 months)",
@@ -152,8 +170,8 @@ module.exports = {
                             name: "Apache Tomcat (4 months)",
                             details: [
                                 "Apache Tomcat Web Container (4 months)",
-                                "Knowlegde of general Tomcat administration; adding users with different privaleges, installing libraries i.e. \
-                                JSF,configuring server wide variables."
+                                "Knowlegde of general Tomcat administration; adding users with different privaleges, installing libraries e.g. \
+                                JSF, configuring server wide variables."
                             ]
                         },
                         {
@@ -163,7 +181,7 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Other tool knowlegde",
+                            name: "Other Tool Knowlegde:",
                             details: [
                             	"VIM",
                                 "Basic understanding of setup and management of IBM DB2.",
@@ -185,18 +203,18 @@ module.exports = {
                             ]
                         },
                         {
-                            name: "Windows Vista and 7 (3 years)",
+                            name: "Windows Vista and 7 (4 years)",
                             details: [
                                 "3 years of general usage and admin.",
                                 "Know some advanced features like setting environment variables."
                             ]
                         },
                         {
-                            name: "Linux (2 years)",
+                            name: "Linux (2.5 years)",
                             details: [
-                                "2 years of general admin and programming experience mainly in Ubuntu including 4 months \
-                                Ubuntu at my Iders work term",
-                                "Some basic CLI experience with Debian and CentOS"
+                                "2.5 years of general admin and programming experience mainly in Ubuntu including 4 months \
+                                Ubuntu at my Iders work term.",
+                                "Some basic CLI experience with Debian and CentOS."
                             ]
                         },
                         {
@@ -212,55 +230,64 @@ module.exports = {
                     name: "General Skills",
                     skills: [
                     	{
-			    name: "Web Design (6 years)",
-			    details: [
-			        "Demonstrated knowlegde of creating simple designs that look good. For example this website design is entirely my own.",
-			        "I Know how to make webpages look good without any images, which improves webpage performance and maintainability."
-			    ]
-			},
-			{
-			    name: "SEO (4 years)",
-			    details: [
-				"I have done custom SEO for my websites over the years, currently the term 'Jacob Friesen' brings up one of my websites \
-				first in Google.ca. Keep in mind that my name is very common.",
-				"I Know how to add SEO to a page without comprising user content by using techniques like meta descriptions and keyword \
-				injection for alt attributes of page elements.",
-				"Additionally I have a basic knowlegde of how most search engines rank pages like how they rank backlinks highly."
-			    ]
+							name: "Web Design (6 years)",
+							details: [
+								"Demonstrated knowlegde of creating simple designs that look good. For example this website design is entirely my own design.",
+								"I Know how to make webpages look good without any images, which improves webpage performance and maintainability."
+							]
+						},
+						{
+							name: "SEO (4 years)",
+							details: [
+								"I have done custom SEO for my websites over the years, currently the term 'Jacob Friesen' brings up one of my websites \
+								first in Google.ca. Keep in mind that my name is very common.",
+								"I Know how to add SEO to a page without comprising user content by using techniques like meta descriptions and keyword \
+								injection for alt attributes of page elements.",
+								"I have a basic knowlegde of how most search engines rank pages like how they rank backlinks highly."
+							]
                         },
                         {
                             name: "Object Orientation (3.5 years)",
                             details: [
-                                "Demonstrated experience of making clean systems on work and school terms.",
+                                "Demonstrated experience of making clean systems on my work and school terms.",
                                 "Know basic object oriented design patterns such as the Model View Controller (MVC) design.",
                                 "Have used object orientation in many different programming contexts. This ranges from client side JavaScript \
                                 to scripting languages like Ruby to compiled languages like Java.",
-                                "Have knowledge of both class based and protypal inheritance"
+                                "Have knowledge of both class based and prototypal inheritance"
                             ]
                         },
                         {
-			    name: "Scripting (3.5 years)",
-			    details: [
-				"Know how to program in an Object Oriented way and the limitations with scripting.",
-				"Know how to advanced techniques like metaprogramming and reflection.",
-				"Know general variable scoping strategies such as closures and delegates."
-			    ]
+							name: "Scripting (3.5 years)",
+							details: [
+								"Know how to program in an Object Oriented way and the limitations with scripting.",
+								"Know how to advanced techniques like metaprogramming and reflection.",
+								"Know general variable scoping strategies such as closures and delegates."
+							]
                         },
                         {
-			    name: "Testing (2 years)",
-			    details: [
-				"Everything I work on now is fully tested including personal projects.",
-				"I have worked on client side GUI and JavaScript tests, server side tests, desktop application tests and some \
-				low level C testing.",
-				"I know how to use: Selenium (Browser GUI tests), RSpec (Ruby), Test Unit (Ruby), Unittest (Python), JUnit (Java), \
-				Jasmine (JavaScript), and QUnit (JavaScript)."
-			    ]
+							name: "Testing (2 years)",
+							details: [
+								"Everything I work on that is not simple now is fully tested including personal projects.",
+								"I have worked on client side GUI and JavaScript tests, server side tests, desktop application tests and some \
+								low level C testing.",
+								"I know how to use: Selenium (Browser GUI tests), RSpec (Ruby), Test Unit (Ruby), Unittest (Python), JUnit (Java), \
+								Jasmine (JavaScript), and QUnit (JavaScript)."
+							]
+                        },
+						{
+							name: "Mobile Web Development (8 months)",
+							details: [
+								"8 months of initially creating then updating my websites mobile interface",
+								"Developed the mobile interface for winnipegjs.com",
+								"I Know how to develop and test code for multiple environments like Android, iOS, and Windows Phone.",
+								"I also know about detecting devices via css media queries, and JavaScript techniques."
+							]
                         },
                         {
-                            name: "Other general skills",
+                            name: "Other General Skills:",
                             details: [
                                 "Basic multi-threaded programming.",
-                                "Knowledge of theoretical computer science.",
+                                "Basic knowledge of theoretical computer science.",
                                 "Writing raw printer code (ZPL) and executing it on a printer remotely.",
                                 "Writing RFID server code (for Motorola one, coded in Python)",
                                 "Working in an Agile environment."
@@ -280,10 +307,10 @@ module.exports = {
                     date: "May 2012 - August 2012",
                     details: [
                         "Worked on Panda the internal web application that manages most of the business including all of the product ordering \
-						coming from all of the online pharmacy sites. Worked in an agile Kanban environment.",
+						coming from all of the online pharmacy sites. Worked in an Agile Kanban environment.",
                         "Used HAML, JavaScript (with lots of JQuery and AJAX), and SCSS to design and update front end interfaces.",
-                        "The backend was code with Ruby on Rails connecting to a MYSQL database.",
-                        "Additionally improved small internal management application with a Twitter Bootstrap interface and Ruby on Rails backend.",
+                        "The backend was coded with Ruby on Rails connecting to a MYSQL database.",
+                        "Additionally, improved a small internal management application with a Twitter Bootstrap interface and a Ruby on Rails backend.",
 						"Most of the code was done in Mac OS X with some basic CLI server admin in CentOS (Linux variant)."
                     ]
                 },
@@ -295,10 +322,10 @@ module.exports = {
                         "Added a new Inventory Location Management system to the current Imformation Management System. This new \
                         system includes 5 different sections which all had different hardware and software environments.",
                         "Used ExtJS, AJAX and some HTML/CSS to design the front end interfaces, with backend code mainly in Python \
-				with some JavaScript (Titanium Studio Libraries) and ZPL.",
-                        "Additionally improved system perfomance in general by a factor of 2 and added a way to save all window placement \
+						with some JavaScript (Titanium Studio Libraries) and ZPL.",
+                        "Additionally, improved system perfomance in general by a factor of 2 and added a way to save all window placement \
                         state between sessions. (See the demo description)",
-			"All work was done in Ubuntu (Linux variant)."
+						"All work was done in Ubuntu (Linux variant)."
                     ]
                 },
                 {
@@ -308,10 +335,10 @@ module.exports = {
                     details: [
                         "Redesigned and managed the back end of all the Rural Water Resources Planner website's tools using Java.",
                         "Redesigned and managed the front end (client side) of the website using a mix of JSF, HTML/CSS, and Javascript. \
-                        Client side development mainly involved designing graphical user interfaces for the website's tools.",
+                        The client side development mainly involved designing graphical user interfaces for the website's tools.",
                         "Participated in defining user experience, page designs, software architecture and other web application essentials \
                         for the whole website.",
-			"All work was done in Windows."
+						"All work was done in Windows."
                     ]
                 },
                 {
@@ -340,6 +367,15 @@ module.exports = {
                     image: ["images/IdersIMS2_s.png", "Iders IMS2 Screen Picture"],
                     link_text: 'Video (Flash): ',
                     link: ["http://www.youtube.com/watch?v=1tB5szfXYCo", "Jacob Friesen demonstrating IMS2 auto window session loading"]
+                },
+				{
+                    name: "AES Implementation",
+                    description: "In Cryptography in the fall school term of 2012 I implemented AES in C++. The implementation is large enough to include \
+					some complexity and demonstrates my ability to code in a C environment. Since the code closely follows the AES specification the \
+					implementation was done in a bottom up C style rather than a top down C++ style. See the README for instructions.",
+                    image: ["images/aes_s.png", "AES Picture"],
+                    link_text: 'Github Source: ',
+                    link: ["https://github.com/Jacob-Friesen/aes_implementation", "Jacob Friesen's AES implementation"]
                 },
                 {
                     name: "Nutrifacts Project",
