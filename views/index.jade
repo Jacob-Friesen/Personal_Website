@@ -15,13 +15,14 @@ center.top_info
 ////
 // main box
 .menu_container(id = "menu_box")
-    - var pages = constant.pages
-    - for (var i = 0; i < pages.length; i++)
-        - page_id = pages[i].toLowerCase();
-        div(class = "menu_box", id = "#{page_id}_link")
-            .menu_icon(id = "#{page_id}")
-            center
-                span.main= pages[i].replace('Experience', 'Exp.')
+    div
+        - var pages = constant.pages
+        - for (var i = 0; i < pages.length; i++)
+            - page_id = pages[i].toLowerCase();
+            div(class = "menu_box", id = "#{page_id}_link")
+                .menu_icon(id = "#{page_id}")
+                center
+                    span.main= pages[i].replace('Experience', 'Exp.')
 .page_state(id = "home")
 
 .main_box(id = "main_box")
