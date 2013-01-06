@@ -23,9 +23,6 @@ module.exports = function(app){
   app.get('/test', function(req, res){
     res.render('test/index.html', {layout: false});
   });
-  app.post('/test', function(req, res){
-    res.render('test/index.html', {layout: false});
-  });
 }
 
 function render_post_page(req, res){
