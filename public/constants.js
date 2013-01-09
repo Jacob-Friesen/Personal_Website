@@ -136,7 +136,8 @@ module.exports = {
                             	"Objective C",
                             	"ZPL",
                                 "PHP",
-                                "Assembly"
+                                "Assembly",
+								"Prolog"
                             ]
                         }
                         
