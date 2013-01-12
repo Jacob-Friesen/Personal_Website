@@ -42,8 +42,8 @@ var system = {
         if(utility.browser_that_supports_float(navigator.userAgent))
             return false;
         
-        $('#page_options').css('position', 'relative').css('float', 'right').width(700);
-        $('#safety_space').height(30);
+        $('#page_options').css('position', 'relative').css('float', 'right').width(290);
+        $('#safety_space').height(0);
         // make sure page options is always at the very bottom of the page, if not move it there.
         if($('#page_options').offset().top < $(window).height())
             $('#safety_space').height($(window).height() - $('#page_options').offset().top);
