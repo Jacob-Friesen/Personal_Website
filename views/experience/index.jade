@@ -23,7 +23,6 @@
             // Details of Job block start
             - if (jobs[i].details)
                 ul.experience.job_main_points(id="collapse_points_job_#{i}", name=i)
-                    hr.clear.above_paragraph
                     - var details = jobs[i].details
                     - for (var j = 0; j < details.length; j++)
                         li#experience_color(id="detail#{i}-#{j}")
@@ -31,4 +30,3 @@
         - if (i < jobs.length - 1)
             .job_seperator
             hr#experience.clear.experience
-            .job_seperator

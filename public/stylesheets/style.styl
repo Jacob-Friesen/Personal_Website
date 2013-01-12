@@ -1,4 +1,4 @@
-default_font = 45px Helvetica, "Lucida Grande", Arial, sans-serif
+default_font = 15px Helvetica, "Lucida Grande", Arial, sans-serif
 
 body
   font: default_font
@@ -8,22 +8,22 @@ body
   
 h1
   padding: 0
-  margin: 0
+  margin: 0 0 5px 0
   font: 14px Helvetica, "Lucida Grande", Arial, sans-serif
-  font-size: 60px
+  font-size: 1.5em
   
 h4
-  font-size: 45px
+  font-size: 13px
   
 // Windows
 div.page_state
   width: 98%
-  height: 20px
+  height: 8px
 
 div.main_box, div.menu_container
   width: 99%
   background-color: white
-  border: 2px solid black
+  border: 1px solid black
   border-radius: 0 0 15px 15px
   
 // Menu
@@ -33,19 +33,19 @@ div.menu_container
   
   div
     margin: 0 auto
-    width: 880px
+    width: 325px
     padding: 0
 
     div.menu_box
       display: inline-block
-      padding: 8px
-      width: 160px
+      padding: 5px 5px 2px 5px
+      width: 55px
       
       div.menu_icon
-        border: solid 2px black
-        border-radius: 30px
-        height: 130px
-        width: 140px
+        border: solid 1px black
+        border-radius:12px
+        height: 50px
+        width: 55px
 
 // Generics
 div.title_bar
@@ -59,43 +59,44 @@ div.text_wrapper
   
 h3.vertical_title, h4.vertical_title
   padding: 0
-  margin: 0 0 15px 0
+  margin: 0 0 0px 0
   display: inline-block
-  margin-left: 10px
   background-color: white
   
 button.collapser
   display: inline
   vertical-align: middle
-  height: 100%
-  width: 80px
+  height: 98%
+  width: 40px
   margin-top: 0
+  float: right
  
   border: 0
-  background-color: transparent
+  background: none//firefox renders no gradient automatically with this
+  background-color: white
   
   p
-    font-size: 70px
+    font-size: 40px
     
 button.small
-  height: 50px
+  height: 40px
   width: 40px
   font-size: 50px
 
 center.top_info
   color: white
-  margin-top: -7px
   
   span
     a
       color: white
 
+// bottom social media buttons
 center
   img
     float: left
-    width: 75px
-    height: 75px
-    padding-right: 5px
+    width: 30px
+    height: 30px
+    padding-right: 2px
     
 cite
   float: top
@@ -106,11 +107,11 @@ cite
 // Home specific
 
 div.main_picture
-  border-radius: 15px
+  border-radius: 7px
   box-shadow:inset 0px 0px 5px rgba(0,0,0,1)
-  border: 2px solid black
+  border: 1px solid black
   width: 90%
-  height: 350px
+  height: 175px
   
 img.main_image
   border-radius: 7px
@@ -120,7 +121,7 @@ img.main_image
 p.home
   background-color: white
   text-align: left
-  margin-bottom: 25px
+  margin-bottom: 15px
   
 p.specialties
   margin: 0
@@ -131,18 +132,18 @@ p.specialties
 
 ul.specialties
   padding: 0 0 0 50px
-  margin: 0 0 40px 0
+  margin: 0 0 15px 0
   text-align: left
   
   ul.specialties li:first-child
-    margin: 20px 0
+    margin: 10px 0
 
 // Page options bar
 div.page_options
   background-color: white
-  border-top: 4px solid black
-  border-left: 4px solid black
-  border-radius: 12px 0 0 0
+  border-top: 1px solid black
+  border-left: 1px solid black
+  border-radius: 6px 0 0 0
   
   bottom:0
   right:0
@@ -150,37 +151,37 @@ div.page_options
   
   div.to_top
     display: inline-block
-    padding: 25px 9px 25px 9px
-    border-right: 4px solid black
+    padding: 16px 9px 16px 9px
+    border-right: 1px solid black
     font: default_font //font can affect borders so must set here
     
   div.page_options_inner
     display: inline-block
-    padding: 8px 4px 8px 10px
+    padding: 2px 4px 0px 5px
     
     span.text_change
       font-weight: bold
       font: default_font //This overrides inherited font changes
-      margin-top: 15px
+      margin-top: 10px
       display: inline-block
     
     button.text_change, button.text_change_selected
       display: inline-block
-      margin: 7px
-      margin-top: 5px
+      margin: 5px 4px 7px 4px
       padding: 7px
-      border 2px solid black
-      border-radius: 12px
+      border 1px solid black
+      border-radius: 6px
+      background: none//firefox renders no gradient automatically with this
       background-color: white
       font: default_font
       
     button.text_change_selected
-      border 4px solid black
+      border 2px solid black
       font-weight: bold
       background-color: lightBlue
       
 div.safety_space
-  height: 120px
+  height: 65px
 
 // Utilities
 #home
@@ -211,7 +212,8 @@ skills_color = #E5AB47
 
 hr
     background-color: black
-    height: 3px
+    border: none
+    height: 2px
 
 hr.clear, .clear, hr.clear.experience
     padding: 0;

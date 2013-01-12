@@ -1,22 +1,25 @@
 div.skills.header,
 div.skills.skill {
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
 }
 div.skills.header button.skills.collapser,
 div.skills.skill button.skills.collapser {
-  margin-top: -8px;
+  margin-top: 5px;
 }
 div.skills.header h3.skills.vertical_title,
 div.skills.skill h3.skills.vertical_title {
-  width: 88%;
-  margin: 40px 0 40px 0;
+  margin: 17px 0 17px 0;
 }
 div.skills.section {
   width: 95%;
 }
 div.skills.section ul.skill_list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+div.skills.section ul.skill_list button.collapser {
+  margin-top: 6px;
 }
 div.skills.section hr.clear.skills {
   width: 95%;
@@ -27,8 +30,7 @@ div.skills.section hr.clear.skills_wide {
 }
 div.skills.section p.skill_name {
   display: inline-block;
-  margin: 15px 0 15px 0;
-  width: 87%;
+  margin: 20px 0 20px 0;
   background-color: #fff;
 }
 div.skills.section p.skill_name _1_ {
