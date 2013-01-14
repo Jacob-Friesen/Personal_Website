@@ -33,19 +33,24 @@ div.menu_container
   
   div
     margin: 0 auto
-    width: 325px
+    width: 98%//325px
     padding: 0
+    //background-color: red
 
     div.menu_box
       display: inline-block
       padding: 5px 5px 2px 5px
-      width: 55px
+      width: 16.80%
+      //background-color: blue
       
       div.menu_icon
         border: solid 1px black
         border-radius:12px
         height: 50px
-        width: 55px
+        width: 100%
+    
+      div.menu_icon:first-child
+        margin-left: 2px
 
 // Generics
 div.title_bar
@@ -76,7 +81,8 @@ button.collapser
   background-color: white
   
   p
-    font-size: 40px
+    margin: 0
+    font-size: 2.75em
     
 button.small
   height: 40px
@@ -157,7 +163,7 @@ div.page_options
     
   div.page_options_inner
     display: inline-block
-    padding: 2px 4px 0px 5px
+    padding: 2px 2px 0px 3px
     
     span.text_change
       font-weight: bold
