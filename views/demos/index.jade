@@ -15,9 +15,11 @@
                 h3.demos.vertical_title= demo_list[d].name
                 .clear
                 
-                h4.demos.vertical_title
-                    b= demo_list[d].link_text
-                    a(href=demo_list[d].link[0], title=demo_list[d].link[1]) here  
+                - var links = demo_list[d].links;
+                - for (var l = 0; l < links.length; l += 1)
+                    h4.demos.vertical_title
+                        b= demo_list[d].links[l].link_text
+                        a(href=demo_list[d].links[l].link[0], title=demo_list[d].links[l].link[1]) here  
             button.collapser(id='demos_collapse_button_#{d}')
         .clear
         
@@ -27,5 +29,5 @@
             //   hr.picture_line
             .demoPic
                 img.demo_img(src=demo_list[d].image[0], alt=demo_list[d].image[1], id="demo_img_#{d}")
-                
+                    
 

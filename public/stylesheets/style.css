@@ -30,19 +30,22 @@ div.menu_container {
 }
 div.menu_container div {
   margin: 0 auto;
-  width: 325px;
+  width: 98%;
   padding: 0;
 }
 div.menu_container div div.menu_box {
   display: inline-block;
   padding: 5px 5px 2px 5px;
-  width: 55px;
+  width: 16.8%;
 }
 div.menu_container div div.menu_box div.menu_icon {
   border: solid 1px #000;
   border-radius: 12px;
   height: 50px;
-  width: 55px;
+  width: 100%;
+}
+div.menu_container div div.menu_box div.menu_icon:first-child {
+  margin-left: 2px;
 }
 div.title_bar {
   text-align: center;
@@ -72,7 +75,8 @@ button.collapser {
   background-color: #fff;
 }
 button.collapser p {
-  font-size: 40px;
+  margin: 0;
+  font-size: 2.75em;
 }
 button.small {
   height: 40px;
@@ -147,7 +151,7 @@ div.page_options div.to_top {
 }
 div.page_options div.page_options_inner {
   display: inline-block;
-  padding: 2px 4px 0px 5px;
+  padding: 2px 2px 0px 3px;
 }
 div.page_options div.page_options_inner span.text_change {
   font-weight: bold;

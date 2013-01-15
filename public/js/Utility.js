@@ -19,7 +19,6 @@ var utility = {
     // that. User agent string must be passed in.
     // NOTE: This must be updated on a regular basis.
     browser_that_supports_float: function(user_agent){
-        var DEVICE = 'iphone';
         var SPLITTERS = ['iphone os ', ' like'];//this must be exact, including spacing
         
         if(user_agent == null) return true;

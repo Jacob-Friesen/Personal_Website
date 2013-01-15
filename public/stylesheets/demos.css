@@ -9,15 +9,15 @@ div.demos.section .demos.header {
   position: relative;
 }
 div.demos.section .demos.header .demos.title {
-  width: 90%;
   display: inline-block;
 }
-div.demos.section .demos.header .demos.title h3.demos.vertical_title {
-  margin-top: 14px;
+div.demos.section .demos.header .demos.title h4.vertical_title {
+  display: block;
 }
 div.demos.section .demos.header button.collapser {
   position: absolute;
   top: 50%;
+  right: 1%;
   margin-top: -32%;
 }
 div.demos.section p.demo_text {
