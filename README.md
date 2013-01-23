@@ -1,6 +1,8 @@
 Portfolio Website
 =================
 
+**This is my old seperate mobile architecture see my new architecture [here](https://github.com/Jacob-Friesen/portfolio_website)**
+
 This is the code for my mobile interface. It was built using Node.js for simplicity reasons; Node requires only three main languages JavaScript (used for server and client side), HTML and CSS. Most frameworks like Ruby on Rails require at least four languages JavaScript, HTML, CSS and the server side language (in the case of Rails, Ruby).
 
 Architecture
@@ -13,4 +15,4 @@ In terms of code the server side just does some basic path updates and gzipping.
 Future Directions
 =================
 
-Merge my mobile website with my desktop website for faster loading (no redirects). All assets, JS, CSS, HTML, etc will be loaded custom for each interface.
+Merge my mobile website with my desktop website for faster loading (no redirects). All assets, JS, CSS, HTML, etc will be loaded custom for each interface. *This was accomplished on January 2012.*
